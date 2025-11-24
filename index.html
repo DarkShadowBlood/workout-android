@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Workout Log</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>🏋️‍♂️ Monde Vivant - Workout Log</h2>
+
+        <label>Nom de la séance / Muscle</label>
+        <input type="text" id="sessionName" placeholder="ex: Pectoraux / Triceps">
+
+        <div class="row">
+            <div class="col">
+                <label>Date</label>
+                <input type="date" id="dateInput">
+            </div>
+            <div class="col">
+                <label>Heure</label>
+                <input type="time" id="timeInput">
+            </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #333; margin: 20px 0;">
+
+        <label>Exercice</label>
+        <div class="autocomplete-container">
+            <input type="text" id="exercise" placeholder="ex: Bench Press" autocomplete="off">
+            <div id="autocomplete-list" class="autocomplete-items" style="display: none;"></div>
+        </div>
+
+        <!-- 1. Information Section -->
+        <div id="exercise-information" class="exercise-section" style="display: none;">
+            <h3>📋 Information</h3>
+            <div id="info-content"></div>
+        </div>
+
+        <!-- 2. Chronomètre Section -->
+        <div id="exercise-timer" class="exercise-section" style="display: none;">
+            <h3>⏱️ Chronomètre</h3>
+            <div id="timer-display">
+                <div class="timer-phase" id="prep-timer">Prep: <span>0</span>s</div>
+                <div class="timer-phase" id="effort-timer">Effort: <span>0</span>s</div>
+                <div class="timer-phase" id="rest-timer">Rest: <span>0</span>s</div>
+                <div class="timer-phase" id="end-timer">End: <span>0</span>s</div>
+            </div>
+            <div class="timer-controls">
+                <button id="start-timer" class="btn-timer">▶️ Start</button>
+                <button id="pause-timer" class="btn-timer">⏸️ Pause</button>
+                <button id="reset-timer" class="btn-timer">🔄 Reset</button>
+            </div>
+            <div id="current-phase" class="current-phase"></div>
+        </div>
+
+        <!-- 3. Log Section -->
+        <div id="exercise-log" class="exercise-section">
+            <h3>📝 Log</h3>
+
+            <div class="row">
+                <div class="col">
+                    <label>Série</label>
+                    <input type="number" id="setNum" placeholder="1" value="1" min="0" inputmode="numeric">
+                </div>
+                <div class="col">
+                    <label>Reps</label>
+                    <input type="number" id="reps" placeholder="0" min="0" inputmode="numeric">
+                </div>
+                <div class="col">
+                    <label>Poids (lb)</label>
+                    <input type="number" id="weight" placeholder="0" min="0" inputmode="numeric">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label>Pas</label>
+                    <input type="number" id="steps" placeholder="0" min="0" inputmode="numeric">
+                </div>
+                <div class="col">
+                    <label>Distance (km)</label>
+                    <input type="text" id="distance" placeholder="0.0" oninput="formatDistance(this)"
+                        inputmode="decimal">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label>Kcal</label>
+                    <input type="number" id="kcal" placeholder="0" min="0" inputmode="numeric">
+                </div>
+                <div class="col">
+                    <label>Temps (hh:mm:ss)</label>
+                    <input type="text" id="duration" placeholder="00:00:00" oninput="formatDuration(this)"
+                        inputmode="numeric">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label>FC Moyenne (bpm)</label>
+                    <input type="number" id="avgHr" placeholder="0" min="0" inputmode="numeric">
+                </div>
+                <div class="col">
+                    <label>FC Maximum (bpm)</label>
+                    <input type="number" id="maxHr" placeholder="0" min="0" inputmode="numeric">
+                </div>
+            </div>
+
+            <label>Notes</label>
+            <input type="text" id="notes" placeholder="ex: Bonne forme, difficile...">
+
+            <button class="btn-add" onclick="addSet()">➕ Ajouter la série</button>
+        </div>
+        <!-- End of Log Section -->
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Exo</th>
+                    <th>Série</th>
+                    <th>Reps</th>
+                    <th>Poids</th>
+                    <th>Pas</th>
+                    <th>Dist</th>
+                    <th>Kcal</th>
+                    <th>Temps</th>
+                    <th>FC Moy</th>
+                    <th>FC Max</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody id="logTable"></tbody>
+        </table>
+
+        <div class="status" id="statusMsg" style="display: none;"></div>
+
+        <button class="btn-save" onclick="saveLog()">📂 Sauvegarder vers Drive</button>
+        <button class="btn-clear" onclick="clearWorkout()">🗑️ Effacer la séance</button>
+    </div>
+
+    <!-- Data Injection Point - Scripts loaded at end of body for proper DOM loading -->
+    <script src="data_exercices.js"></script>
+    <script src="data_exercices_complet.js"></script>
+    <script>
+        // Map external data to internal variable for compatibility
+        const EXERCISE_DATA = exercicesCategories;
+        const EXERCISE_DETAILS = db_exercices;
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
