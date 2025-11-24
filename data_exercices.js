@@ -2,29 +2,26 @@
 
 const exercicesCategories = {
     "Favoris": [
-        "Vélo",
-        "Marche",
-        "Randonnée"
-    ],
-    "essais": [
-        "Vélo",
+        "Vélo urbain",
+        "Vélo de randonnée",
         "Marche",
         "Randonnée"
     ],
     "Autres": [
-        "Sommeil",
-        "teste"
+        "Sommeil"
     ],
     "Fitness & Musculation": [
-        "Corde à sauter de boxe",
-        "Corde à sauter lestée",
+        "Saut à la corde - Boxe",
+        "Saut à la corde - Lesté",
         "Musculation"
     ],
     "Sports Extérieurs": [
         "Course à pied",
         "Marche",
         "Randonnée",
-        "Vélo"
+        "Vélo urbain",
+        "Vélo de randonnée",
+        "Pelleter la neige"
     ],
     "Endurance Musculaire": [
         "Bench Press - Sans poids",
