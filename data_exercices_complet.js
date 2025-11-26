@@ -20,10 +20,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "ArnoldPress_002",
@@ -46,10 +46,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "ArnoldPress_003",
@@ -72,10 +72,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "ArnoldPress_004",
@@ -98,10 +98,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "BenchPress_001",
@@ -116,7 +116,7 @@ const db_exercices = [
         "Description": "Pour les débutants : allonge-toi sur le banc Marcy, barre olympique chargée avec 5-10 lbs (2,5-5 lbs par côté), prise large (paumes vers l’avant), barre au-dessus de ta poitrine. Descends la barre jusqu’à frôler ton torse, puis pousse fort jusqu’à tendre les bras sans verrouiller les coudes. Pour les avancés : charge 25-50 lbs, descente contrôlée sur 3 sec, explosion vers le haut, garde les épaules stables. Extérieur : banc dehors, pousse sous le ciel, imagine repousser un bélier ennemi.",
         "Variantes": "Avec poids cheville pour ancrer tes jambes. Ajoute une pause de 1 sec en bas pour plus de tension. Combo : 10 reps + 10 frappes au sac de frappe.",
         "Conseils_Expert": "Pieds bien plantés, pas de rebond sur la poitrine. Épaules en arrière, pas arquées comme un pont. Respire : inspire en descendant, expire en poussant. Si ça tremble, baisse le poids, t’es pas encore un titan.",
-        "Raison": "4-6 reps avec barre 54\" (40-80 lbs), travail pecs et triceps.",
+        "Raison": "4-6 reps avec barre 54\\\" (40-80 lbs), travail pecs et triceps.",
         "LitRPG_Narration": "Varkis grogne : ‘Pousse cette barre, ou les spectres t’écraseront comme un insecte !’ Kara ricane : ‘T’as l’air d’un cadavre raide, mais vas-y, soulève !’ Varkis : ‘Chaque rep, c’est un bouclier brisé sous ta force.’ Kara : ‘Plus fort, ou je te fais rouler du banc avec un coup de patte !’ Varkis : ‘Concentre-toi, ou t’es qu’une proie sans cœur.’",
         "Explication": "Focus sur la puissance pectorale et triceps. Matos : banc Marcy + barre olympique chargée. LitRPG : Force pour repousser les hordes de Thornval.",
         "Timing": "10 reps = 40 sec",
@@ -124,10 +124,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "BenchPress_002",
@@ -150,10 +150,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "BenchPress_003",
@@ -176,10 +176,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "BenchPress_004",
@@ -202,10 +202,10 @@ const db_exercices = [
         "Effort_Time": "36",
         "Rest_Time": "15",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Bench_Dips_001",
@@ -228,10 +228,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Bench_Dips_002",
@@ -254,10 +254,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Bench_Dips_003",
@@ -280,10 +280,10 @@ const db_exercices = [
         "Effort_Time": "50",
         "Rest_Time": "30",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Bench_Dips_004",
@@ -306,10 +306,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "BentOverRows_001",
@@ -324,7 +324,7 @@ const db_exercices = [
         "Description": "Barre olympique en main, pieds écartés largeur d’épaules, penche-toi à 45°, dos droit. Débutant : Charge légère (2x10 lbs), 10 reps, tire la barre vers le nombril, coudes près du corps. Avancé : Charge moyenne (2x25 lbs), 12 reps, contrôle total, serre les omoplates en haut. Extérieur : Même setup sur terrain plat, ajuste si le sol bouge sous tes pieds.",
         "Variantes": "Bent-over Rows - Large : Prise plus large, focus épaules. Bent-over Rows - Unilatéral : Une main sur le genou, barre légère. Bent-over Rows - Explosif : Tire vite, descends lent.",
         "Conseils_Expert": "Dos plat, pas de bosse, ou t’es cuit. Tire avec les coudes, pas les mains seules. Garde les jambes solides, pas de balancement. Extérieur : Sol instable ? Plante-toi comme un roc.",
-        "Raison": "4-6 reps avec barre 54\" (40-70 lbs), travail dos.",
+        "Raison": "4-6 reps avec barre 54\\\" (40-70 lbs), travail dos.",
         "LitRPG_Narration": "Varkis grogne : ‘Tire ça, ou t’es pas digne d’un arc de Thornval !’ Kara ricane : ‘Quoi, trop lourd ? Moi, je soulève des carcasses !’ Varkis : ‘Force dans le dos, ou t’es proie facile.’ Kara : ‘Imagine un pillard à ramener au sol, tire !’ Varkis : ‘Chaque rep, c’est un ennemi plié en deux.’",
         "Explication": "Focus : Dos et biceps avec puissance brute. Matos : Barre olympique + poids (1,25 à 50 lbs selon niveau). LitRPG : Force d’un chasseur des terres sauvages.",
         "Timing": "10 reps = 50 sec",
@@ -332,10 +332,10 @@ const db_exercices = [
         "Effort_Time": "50",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "BentOverRows_002",
@@ -358,10 +358,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "BentOverRows_003",
@@ -384,10 +384,10 @@ const db_exercices = [
         "Effort_Time": "50",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "BentOverRows_004",
@@ -410,10 +410,10 @@ const db_exercices = [
         "Effort_Time": "50",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "BoxJumps_001",
@@ -436,10 +436,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "BoxPunch_001",
@@ -462,10 +462,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "BoxPunch_002",
@@ -488,10 +488,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "BoxPunch_003",
@@ -514,10 +514,10 @@ const db_exercices = [
         "Effort_Time": "20",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "BoxPunch_004",
@@ -540,10 +540,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Clamshell_001",
@@ -566,10 +566,10 @@ const db_exercices = [
         "Effort_Time": "36",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Clamshell_002",
@@ -592,10 +592,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Clamshell_003",
@@ -618,10 +618,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Clamshell_004",
@@ -644,10 +644,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "ConcentrationCurls_001",
@@ -670,10 +670,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "ConcentrationCurls_002",
@@ -696,10 +696,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "ConcentrationCurls_003",
@@ -722,10 +722,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "ConcentrationCurls_004",
@@ -748,10 +748,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Crunches_001",
@@ -774,10 +774,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "15",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Crunches_002",
@@ -800,10 +800,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "15",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Crunches_003",
@@ -818,7 +818,7 @@ const db_exercices = [
         "Description": "Débutant : Allonge-toi sur ton banc Marcy MD-859 ou au sol, prends ta barre haltère 15 pouces (charge légère, genre 5-10 lbs total), tiens-la au-dessus de ta poitrine, bras tendus. Contracte les abdos, monte jusqu’à ce que tes épaules décollent, redescends sans lâcher le contrôle. Intermédiaire : Charge 15-20 lbs, garde les bras fixes, monte plus haut, tiens 1 sec en contraction. Avancé : 25-30 lbs, tends les bras vers le plafond en montant, descends lentement pour maximiser la tension. Extérieur : Sur le terrain, pose-toi sur une surface stable, laisse le poids défier le vent.",
         "Variantes": "Avec torsion : Barre au-dessus, tourne un côté en montant, alterne. Avec banc incliné : Monte la pente du Marcy, haltère en main, fais chauffer. Avec pause : Tiens 2 sec en haut, fais trembler tes abdos.",
         "Conseils_Expert": "Fixe bien la barre, pas de balancement foireux. Respire : expire en montant, inspire en bas. Si les épaules tirent, baisse la charge ou plie légèrement les bras. Extérieur : check le sol, pas de caillasses sous le dos.",
-        "Raison": "8-12 reps avec haltère (15\"), charge modérée pour croissance abdos.",
+        "Raison": "8-12 reps avec haltère (15\\\"), charge modérée pour croissance abdos.",
         "LitRPG_Narration": "Varkis grogne : ‘T’as du fer dans les mains, alors soulève ton honneur !’ Kara ricane : ‘Plus lourd, plus fort, ou je te fais bouffer la poussière !’ Varkis : ‘Chaque montée, un crâne brisé sous ta volonté.’ Kara : ‘Tends ce bout de métal au ciel, fais chanter le chaos dans tes os !’ Varkis : ‘Pas de faiblesse, guerrier, le poids te forge ou te tue.’",
         "Explication": "Focus : Core, avec un boost de stabilité. Matos : Barre haltère, ton arme pour sculpter. LitRPG : Force pour le défi, un peu de vitalité pour encaisser.",
         "Timing": "10 reps = 35 sec",
@@ -826,10 +826,10 @@ const db_exercices = [
         "Effort_Time": "35",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Crunches_004",
@@ -852,10 +852,10 @@ const db_exercices = [
         "Effort_Time": "36",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "CurlBiceps_001",
@@ -878,10 +878,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "CurlBiceps_002",
@@ -904,10 +904,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "CurlBiceps_003",
@@ -930,10 +930,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "CurlBiceps_004",
@@ -956,10 +956,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Deadlift_001",
@@ -982,10 +982,10 @@ const db_exercices = [
         "Effort_Time": "50",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Deadlift_002",
@@ -1008,10 +1008,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Deadlift_003",
@@ -1034,10 +1034,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Deadlift_004",
@@ -1060,10 +1060,10 @@ const db_exercices = [
         "Effort_Time": "50",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Deadlift_roumain_001",
@@ -1086,10 +1086,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Deadlift_roumain_002",
@@ -1112,10 +1112,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Deadlift_roumain_003",
@@ -1138,10 +1138,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Deadlift_roumain_004",
@@ -1164,10 +1164,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "eff Favored by default",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Decline_Press_001",
@@ -1190,10 +1190,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Decline_Press_002",
@@ -1216,10 +1216,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Decline_Press_003",
@@ -1242,10 +1242,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Decline_Press_004",
@@ -1268,10 +1268,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "DevIncline_001",
@@ -1294,10 +1294,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "DevIncline_002",
@@ -1320,10 +1320,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "DevIncline_003",
@@ -1346,10 +1346,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "DevIncline_004",
@@ -1372,10 +1372,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "DonkeyKick_001",
@@ -1398,10 +1398,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "DonkeyKick_002",
@@ -1424,10 +1424,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "DonkeyKick_003",
@@ -1450,10 +1450,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "DonkeyKick_004",
@@ -1476,10 +1476,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "15",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Elliptical_001",
@@ -1502,10 +1502,10 @@ const db_exercices = [
         "Effort_Time": "600",
         "Rest_Time": "30",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "FacePulls_001",
@@ -1528,10 +1528,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "FacePulls_002",
@@ -1554,10 +1554,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "FacePulls_003",
@@ -1580,10 +1580,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "FacePulls_004",
@@ -1606,10 +1606,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "FarmersWalk_001",
@@ -1632,10 +1632,10 @@ const db_exercices = [
         "Effort_Time": "20",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "FarmersWalk_002",
@@ -1658,10 +1658,10 @@ const db_exercices = [
         "Effort_Time": "20",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "FarmersWalk_003",
@@ -1684,10 +1684,10 @@ const db_exercices = [
         "Effort_Time": "20",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "FarmersWalk_004",
@@ -1710,10 +1710,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Flyes_001",
@@ -1736,10 +1736,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Flyes_002",
@@ -1762,10 +1762,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Flyes_003",
@@ -1788,10 +1788,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Flyes_004",
@@ -1814,10 +1814,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "FrontRaises_001",
@@ -1840,10 +1840,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "FrontRaises_002",
@@ -1866,10 +1866,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "FrontRaises_003",
@@ -1892,10 +1892,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "FrontRaises_004",
@@ -1918,10 +1918,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HammerCurls_001",
@@ -1944,10 +1944,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HammerCurls_002",
@@ -1970,10 +1970,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HammerCurls_003",
@@ -1996,10 +1996,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HammerCurls_004",
@@ -2022,10 +2022,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_001",
@@ -2048,10 +2048,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_002",
@@ -2074,10 +2074,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_003",
@@ -2100,10 +2100,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "30",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_004",
@@ -2126,10 +2126,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "15",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_005",
@@ -2152,10 +2152,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_006",
@@ -2178,10 +2178,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_007",
@@ -2204,10 +2204,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_008",
@@ -2230,10 +2230,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "30",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_009",
@@ -2256,10 +2256,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "35",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_010",
@@ -2282,10 +2282,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "40",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_011",
@@ -2308,10 +2308,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_012",
@@ -2334,10 +2334,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_013",
@@ -2360,10 +2360,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_014",
@@ -2386,10 +2386,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_015",
@@ -2412,10 +2412,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_016",
@@ -2438,10 +2438,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "30",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_017",
@@ -2464,10 +2464,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "15",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_018",
@@ -2490,10 +2490,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_019",
@@ -2516,10 +2516,10 @@ const db_exercices = [
         "Effort_Time": "35",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_020",
@@ -2542,10 +2542,10 @@ const db_exercices = [
         "Effort_Time": "25",
         "Rest_Time": "15",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_021",
@@ -2568,10 +2568,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HEMA_022",
@@ -2594,10 +2594,10 @@ const db_exercices = [
         "Effort_Time": "35",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HIIT_001",
@@ -2620,10 +2620,10 @@ const db_exercices = [
         "Effort_Time": "360",
         "Rest_Time": "30",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HipThrust_001",
@@ -2638,7 +2638,7 @@ const db_exercices = [
         "Description": "Installe-toi avec ton banc Marcy, c’est parti.Assieds-toi par terre, dos contre le banc, pieds bien à plat devant.Pousse avec les talons, monte les hanches jusqu’à aligner cuisses et torse.Redescends contrôlé, sans toucher le sol, garde la tension.Avancé : tiens 2 sec en haut, serre fort les fessiers.Extérieur : trouve un rebord stable, fais-le sous le ciel brut.",
         "Variantes": "Hip thrust avec pause en haut, 3 sec.Hip thrust unilatéral, une jambe levée.Hip thrust lent, descente en 4 sec.",
         "Conseils_Expert": "Pieds écartés comme tes épaules, pas plus.Pousse avec les talons, pas les orteils.Garde le menton rentré, regarde devant.Serre les fessiers en haut, c’est le secret.",
-        "Raison": "8-12 reps avec barre 54\", focus fessiers.",
+        "Raison": "8-12 reps avec barre 54\\\", focus fessiers.",
         "LitRPG_Narration": "Varkis grogne : ‘Lève ces hanches ou t’es mort sous la hache !’Kara ricane, tapant le banc : ‘Trop faible, je te fais plier en deux.’Tes fessiers brûlent, le sol tremble sous ta force.Varkis te fixe : ‘Encore dix, ou t’es pas un survivant.’Kara murmure : ‘Pousse, ou je te traîne dans la boue !’",
         "Explication": "Focus sur les fessiers et la puissance basse.Le banc Marcy te donne le support idéal.LitRPG : force d’un guerrier, prêt au combat.",
         "Timing": "10 reps = 40 sec",
@@ -2646,10 +2646,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HipThrust_002",
@@ -2672,10 +2672,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HipThrust_003",
@@ -2698,10 +2698,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "HipThrust_004",
@@ -2724,10 +2724,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Kickback_001",
@@ -2750,10 +2750,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Kickback_002",
@@ -2776,10 +2776,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Kickback_003",
@@ -2802,10 +2802,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Kickback_004",
@@ -2828,10 +2828,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "LateralRaises_001",
@@ -2854,10 +2854,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "LateralRaises_002",
@@ -2880,10 +2880,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "LateralRaises_003",
@@ -2906,10 +2906,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "LateralRaises_004",
@@ -2932,10 +2932,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "LegRaises_001",
@@ -2958,10 +2958,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "LegRaises_002",
@@ -2984,10 +2984,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "LegRaises_003",
@@ -3010,10 +3010,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "LegRaises_004",
@@ -3036,10 +3036,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Lunge_001",
@@ -3062,10 +3062,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Lunge_002",
@@ -3088,10 +3088,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Lunge_003",
@@ -3114,10 +3114,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Lunge_004",
@@ -3140,10 +3140,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Lunge_005",
@@ -3166,10 +3166,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Lunge_006",
@@ -3192,10 +3192,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Lunge_007",
@@ -3218,10 +3218,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Lunge_008",
@@ -3244,10 +3244,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Marche_001",
@@ -3259,21 +3259,21 @@ const db_exercices = [
         "Notation_Difficulte": "2",
         "Notation_Efficacite": "3",
         "Intro_Simple": "Marche fort, conquiers le terrain !",
-        "Description": "Fixe les poids aux chevilles (1,25 lbs pour débutant, 2,5 lbs pour avancé).\nDans ton sous-sol, marche sur place avec des pas hauts, 3-5 minutes.\nGarde les bras actifs, comme si tu boxais l’air.\nDébutant : rythme modéré, focus sur la régularité.\nAvancé : augmente la cadence et ajoute des poids aux poignets.\nExtérieur : marche sur terrain varié, incluant pentes ou gravier.",
-        "Variantes": "Marche simple (sans poids, focus fluidité).\nMarche rapide avec fentes (avancé, une fente tous les 10 pas).\nMarche en côte (extérieur, trouve une pente raide).",
-        "Conseils_Expert": "Tiens le dos droit pour éviter la fatigue.\nPousse avec les talons pour activer les mollets.\nRespire profondément : inspire 4 pas, expire 4 pas.\nExtérieur : surveille le terrain pour éviter les entorses.",
+        "Description": "Fixe les poids aux chevilles (1,25 lbs pour débutant, 2,5 lbs pour avancé). Dans ton sous-sol, marche sur place avec des pas hauts, 3-5 minutes. Garde les bras actifs, comme si tu boxais l’air. Débutant : rythme modéré, focus sur la régularité. Avancé : augmente la cadence et ajoute des poids aux poignets. Extérieur : marche sur terrain varié, incluant pentes ou gravier.",
+        "Variantes": "Marche simple (sans poids, focus fluidité). Marche rapide avec fentes (avancé, une fente tous les 10 pas). Marche en côte (extérieur, trouve une pente raide).",
+        "Conseils_Expert": "Tiens le dos droit pour éviter la fatigue. Pousse avec les talons pour activer les mollets. Respire profondément : inspire 4 pas, expire 4 pas. Extérieur : surveille le terrain pour éviter les entorses.",
         "Raison": "",
-        "LitRPG_Narration": "‘Varkis grogne : Marche, ou Thornval t’ensevelira !’\n‘Kara ricane : Bouge tes jambes, ou je te fais courir !’\n‘Chaque pas résonne comme un défi aux ombres.’\n‘Le vent porte l’écho des survivants.’\n‘Varkis marmonne : Un guerrier avance, toujours.’\n‘Kara hurle : Plus loin, ou le chaos te happe !’",
-        "Explication": "Focus sur l’endurance et la vitalité avec une marche active.\nLes poids aux chevilles ajoutent une résistance légère.\nLitRPG : entraîne-toi comme un errant dans un monde sauvage.",
+        "LitRPG_Narration": "‘Varkis grogne : Marche, ou Thornval t’ensevelira !’ ‘Kara ricane : Bouge tes jambes, ou je te fais courir !’ ‘Chaque pas résonne comme un défi aux ombres.’ ‘Le vent porte l’écho des survivants.’ ‘Varkis marmonne : Un guerrier avance, toujours.’ ‘Kara hurle : Plus loin, ou le chaos te happe !’",
+        "Explication": "Focus sur l’endurance et la vitalité avec une marche active. Les poids aux chevilles ajoutent une résistance légère. LitRPG : entraîne-toi comme un errant dans un monde sauvage.",
         "Timing": "60 pas = 60 sec",
         "Prep_Time": "5",
         "Effort_Time": "60",
         "Rest_Time": "30",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "OverheadPress_001",
@@ -3296,10 +3296,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "OverheadPress_002",
@@ -3322,10 +3322,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "OverheadPress_003",
@@ -3348,10 +3348,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "OverheadPress_004",
@@ -3374,10 +3374,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Pelleter_Neige_001",
@@ -3389,21 +3389,21 @@ const db_exercices = [
         "Notation_Difficulte": "3",
         "Notation_Efficacite": "4",
         "Intro_Simple": "Pelle comme un guerrier, repousse l’hiver !",
-        "Description": "Prends une pelle robuste et positionne-toi dans ton entrée enneigée (extérieur).\nDans le sous-sol, simule avec une barre olympique sans poids, 3-5 min.\nPieds écartés, fléchis les genoux, pousse la neige en un mouvement fluide.\nDébutant : petites pelletées, rythme lent, focus posture.\nAvancé : augmente le volume et la vitesse, engage le core.\nExtérieur : pelle un chemin de 5-10 m, alterne les côtés pour équilibrer.",
-        "Variantes": "Pelleter simple (lent, focus technique).\nPelleter avec torsion (avancé, ajoute un pivot du torse).\nPelleter en sprint (extérieur, 1 min rapide, 1 min repos).",
-        "Conseils_Expert": "Fléchis les genoux, pas le dos, pour éviter les blessures.\nEngage le core pour stabiliser chaque mouvement.\nAlterne les côtés pour équilibrer les muscles.\nExtérieur : porte des bottes antidérapantes pour plus de sécurité.",
+        "Description": "Prends une pelle robuste et positionne-toi dans ton entrée enneigée (extérieur). Dans le sous-sol, simule avec une barre olympique sans poids, 3-5 min. Pieds écartés, fléchis les genoux, pousse la neige en un mouvement fluide. Débutant : petites pelletées, rythme lent, focus posture. Avancé : augmente le volume et la vitesse, engage le core. Extérieur : pelle un chemin de 5-10 m, alterne les côtés pour équilibrer.",
+        "Variantes": "Pelleter simple (lent, focus technique). Pelleter avec torsion (avancé, ajoute un pivot du torse). Pelleter en sprint (extérieur, 1 min rapide, 1 min repos).",
+        "Conseils_Expert": "Fléchis les genoux, pas le dos, pour éviter les blessures. Engage le core pour stabiliser chaque mouvement. Alterne les côtés pour équilibrer les muscles. Extérieur : porte des bottes antidérapantes pour plus de sécurité.",
         "Raison": "",
-        "LitRPG_Narration": "‘Varkis grogne : Pelle, ou l’hiver de Thornval t’ensevelira !’\n‘Kara ricane : Plus vite, ou je te gèle les os !’\n‘La neige crisse, défiant ta force.’\n‘Chaque pelletée est un combat contre le froid.’\n‘Varkis marmonne : Un survivant brise les tempêtes.’\n‘Kara hurle : Creuse, ou le chaos t’engloutit !’",
-        "Explication": "Focus sur la force et l’endurance avec un mouvement fonctionnel.\nLa pelle ou la barre simule un travail réel d’hiver.\nLitRPG : entraîne-toi comme un survivant dans un monde gelé.",
+        "LitRPG_Narration": "‘Varkis grogne : Pelle, ou l’hiver de Thornval t’ensevelira !’ ‘Kara ricane : Plus vite, ou je te gèle les os !’ ‘La neige crisse, défiant ta force.’ ‘Chaque pelletée est un combat contre le froid.’ ‘Varkis marmonne : Un survivant brise les tempêtes.’ ‘Kara hurle : Creuse, ou le chaos t’engloutit !’",
+        "Explication": "Focus sur la force et l’endurance avec un mouvement fonctionnel. La pelle ou la barre simule un travail réel d’hiver. LitRPG : entraîne-toi comme un survivant dans un monde gelé.",
         "Timing": "10 pelletées = 60 sec",
         "Prep_Time": "5",
         "Effort_Time": "60",
         "Rest_Time": "30",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "PlankPunches_001",
@@ -3426,10 +3426,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "PlankPunches_002",
@@ -3452,10 +3452,10 @@ const db_exercices = [
         "Effort_Time": "50",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "PlankPunches_003",
@@ -3478,10 +3478,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "PlankPunches_004",
@@ -3504,10 +3504,10 @@ const db_exercices = [
         "Effort_Time": "50",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Plank_001",
@@ -3530,10 +3530,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Plank_002",
@@ -3556,10 +3556,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Plank_003",
@@ -3582,10 +3582,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Plank_004",
@@ -3608,10 +3608,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Plantarflex_001",
@@ -3634,10 +3634,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Plantarflex_002",
@@ -3660,10 +3660,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Plantarflex_003",
@@ -3686,10 +3686,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Plantarflex_004",
@@ -3712,10 +3712,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "PullOvers_001",
@@ -3730,7 +3730,7 @@ const db_exercices = [
         "Description": "Allonge-toi sur le banc Marcy, une haltère (ex. 5 lbs pour débutant) tenue à deux mains au-dessus du torse. Débutant : 10 reps, descends l’haltère derrière la tête, bras tendus, remonte au-dessus du torse. Avancé : 12 reps, poids plus lourd (ex. 15 lbs), contrôle total, sens l’étirement des dorsaux. Extérieur : Sans banc, fais-le au sol sur terrain plat, ajuste l’amplitude.",
         "Variantes": "Pull-overs - Rotatif : Tourne légèrement les poignets en descendant. Pull-overs - Barre Olympique : Utilise la barre olympique légère. Pull-overs - Explosif : Monte vite, descends lent.",
         "Conseils_Expert": "Bras presque tendus, pas de coude plié. Core serré, pas de dos qui creuse. Respire profond, inspire en bas, expire en haut. Extérieur : Sol dur ? Protège ta tête.",
-        "Raison": "8-12 reps avec haltère 15\", travail dos et pecs.",
+        "Raison": "8-12 reps avec haltère 15\\\", travail dos et pecs.",
         "LitRPG_Narration": "Varkis grogne : ‘Tire ça, ou t’es pas digne d’un bouclier !’ Kara ricane : ‘Léger ? Moi, je soulève des crânes entiers !’ Varkis : ‘Dorsaux forts, ou t’es mort sous la première charge.’ Kara : ‘Imagine une lance à ramener, étire et tire !’ Varkis : ‘Chaque rep, c’est un mur de plus dans ton armure.’",
         "Explication": "Focus : Dorsaux et poitrine avec technique précise. Matos : Barre haltère 15 pouces + poids (1,25 à 50 lbs selon niveau). LitRPG : Force et portée d’un guerrier des cimes.",
         "Timing": "10 reps = 50 sec",
@@ -3738,10 +3738,10 @@ const db_exercices = [
         "Effort_Time": "50",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "PullOvers_002",
@@ -3764,10 +3764,10 @@ const db_exercices = [
         "Effort_Time": "50",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "PullOvers_003",
@@ -3790,10 +3790,10 @@ const db_exercices = [
         "Effort_Time": "50",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "PullOvers_004",
@@ -3816,10 +3816,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Push_Ups_001",
@@ -3842,10 +3842,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Push_Ups_002",
@@ -3868,10 +3868,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Push_Ups_003",
@@ -3894,10 +3894,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Push_Ups_004",
@@ -3920,10 +3920,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Randonnee_001",
@@ -3935,21 +3935,21 @@ const db_exercices = [
         "Notation_Difficulte": "2",
         "Notation_Efficacite": "3",
         "Intro_Simple": "Explore, endure, deviens le maître du chemin !",
-        "Description": "Attache les poids aux chevilles (1,25 lbs pour débutant, 2,5 lbs pour avancé).\nDans ton sous-sol, marche sur place avec des pas larges, 5-7 minutes, en simulant un terrain.\nGarde les bras en mouvement, comme si tu écartais des branches.\nDébutant : rythme lent, focus sur la posture.\nAvancé : augmente la cadence et ajoute des poids aux poignets pour plus d’intensité.\nExtérieur : randonne sur un sentier ou terrain vallonné, 10-15 minutes.",
-        "Variantes": "Randonnée simple (sans poids, focus fluidité).\nRandonnée avec sprints (avancé, 20 sec rapides tous les 2 min).\nRandonnée en montée (extérieur, cherche une pente raide).",
-        "Conseils_Expert": "Tiens le dos droit pour éviter les tensions.\nUtilise les talons pour activer les mollets et les cuisses.\nRespire en rythme : inspire 4 pas, expire 4 pas.\nExtérieur : vérifie le terrain pour éviter les obstacles.",
+        "Description": "Attache les poids aux chevilles (1,25 lbs pour débutant, 2,5 lbs pour avancé). Dans ton sous-sol, marche sur place avec des pas larges, 5-7 minutes, en simulant un terrain. Garde les bras en mouvement, comme si tu écartais des branches. Débutant : rythme lent, focus sur la posture. Avancé : augmente la cadence et ajoute des poids aux poignets pour plus d’intensité. Extérieur : randonne sur un sentier ou terrain vallonné, 10-15 minutes.",
+        "Variantes": "Randonnée simple (sans poids, focus fluidité). Randonnée avec sprints (avancé, 20 sec rapides tous les 2 min). Randonnée en montée (extérieur, cherche une pente raide).",
+        "Conseils_Expert": "Tiens le dos droit pour éviter les tensions. Utilise les talons pour activer les mollets et les cuisses. Respire en rythme : inspire 4 pas, expire 4 pas. Extérieur : vérifie le terrain pour éviter les obstacles.",
         "Raison": "",
-        "LitRPG_Narration": "‘Varkis grogne : Marche, ou les ombres de Thornval t’avaleront !’\n‘Kara ricane : Cours, ou mes griffes te pousseront !’\n‘Chaque pas défie les terres maudites de Thornval.’\n‘Ton souffle est une arme contre le chaos.’\n‘Varkis marmonne : Un survivant avance sans faiblir.’\n‘Kara hurle : Plus loin, ou le vent te brisera !’",
-        "Explication": "Focus sur l’endurance et la vitalité avec une marche intense.\nLes poids aux chevilles simulent une randonnée en terrain difficile.\nLitRPG : entraîne-toi comme un voyageur dans un monde impitoyable.",
+        "LitRPG_Narration": "‘Varkis grogne : Marche, ou les ombres de Thornval t’avaleront !’ ‘Kara ricane : Cours, ou mes griffes te pousseront !’ ‘Chaque pas défie les terres maudites de Thornval.’ ‘Ton souffle est une arme contre le chaos.’ ‘Varkis marmonne : Un survivant avance sans faiblir.’ ‘Kara hurle : Plus loin, ou le vent te brisera !’",
+        "Explication": "Focus sur l’endurance et la vitalité avec une marche intense. Les poids aux chevilles simulent une randonnée en terrain difficile. LitRPG : entraîne-toi comme un voyageur dans un monde impitoyable.",
         "Timing": "120 pas = 120 sec",
         "Prep_Time": "5",
         "Effort_Time": "120",
         "Rest_Time": "30",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "RussianTwists_001",
@@ -3972,10 +3972,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "RussianTwists_002",
@@ -3990,7 +3990,7 @@ const db_exercices = [
         "Description": "Débutant : Assieds-toi sur ton banc Marcy MD-859 ou au sol, genoux pliés, pieds à plat, dos incliné légèrement en arrière. Tiens ta barre haltère 15 pouces (5-10 lbs) devant toi, bras semi-tendus, tourne le torse à droite puis à gauche, contrôle le poids. Intermédiaire : Charge 15-20 lbs, soulève les pieds à 10 cm, fais des torsions nettes sans balancer. Avancé : 25-30 lbs, jambes tendues devant, penche-toi plus, twist avec puissance et précision. Extérieur : Sur le terrain, trouve un spot stable, laisse le poids défier le vent et la terre.",
         "Variantes": "Avec torsion lente : Tiens la barre, tourne doucement, tiens 1 sec par côté. Avec banc incliné : Sur le Marcy incliné, haltère en main, twist en montée. Avec sac bonus : Tape le sac de frappe à chaque torsion pour le rythme.",
         "Conseils_Expert": "Garde les abdos serrés, pas juste les bras qui bossent. Dos droit, pas de bosse de chameau. Respire : expire à chaque côté, inspire au milieu. Extérieur : check le sol, pas de cailloux sous les fesses.",
-        "Raison": "10-12 reps avec haltère (15\"), intensité modérée pour obliques.",
+        "Raison": "10-12 reps avec haltère (15\\\"), intensité modérée pour obliques.",
         "LitRPG_Narration": "Varkis grogne : ‘Le fer dans tes mains, fais-le obéir ou crève faible !’ Kara glapit : ‘Tourne, vite, fais hurler tes flancs comme une lame vive !’ Varkis : ‘Chaque twist, un coup porté à l’ombre.’ Kara : ‘Plus lourd, plus fort, ou je te fais danser dans la boue !’ Varkis : ‘Pas de repos, le poids forge les survivants.’",
         "Explication": "Focus : Core, obliques sculptés, stabilité sous tension. Matos : Barre haltère, ton arme pour trancher. LitRPG : Force et agilité, comme un guerrier en duel.",
         "Timing": "20 reps = 45 sec",
@@ -3998,10 +3998,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "RussianTwists_003",
@@ -4024,10 +4024,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "RussianTwists_004",
@@ -4050,10 +4050,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Saut_a_la_corde_001",
@@ -4065,21 +4065,21 @@ const db_exercices = [
         "Notation_Difficulte": "3",
         "Notation_Efficacite": "4",
         "Intro_Simple": "Sors ton énergie, frappe fort, saute léger !",
-        "Description": "Prends le sac de frappe lourd et imagine un adversaire.\nPositionne-toi à 1 mètre, pieds écartés, légèrement fléchis.\nSaute à la corde en rythme, 2-3 minutes, comme un boxeur.\nAjoute des crochets légers au sac entre les sauts (débutant : 1-2 coups).\nAvancé : augmente la vitesse des sauts et frappe avec plus de puissance.\nExtérieur : fais-le sur un terrain plat, ajoute des déplacements latéraux.",
-        "Variantes": "Saut à la corde classique (sans sac, focus rythme).\nSaut à la corde avec double tour (avancé, plus rapide).\nSaut à la corde avec esquives (extérieur, simule un combat).",
-        "Conseils_Expert": "Garde les genoux souples pour éviter les chocs.\nConcentre-toi sur la respiration : expire à chaque saut.\nFixe un point devant pour l’équilibre.\nAvancé : synchronise les frappes avec les sauts pour plus de fluidité.",
+        "Description": "Prends le sac de frappe lourd et imagine un adversaire. Positionne-toi à 1 mètre, pieds écartés, légèrement fléchis. Saute à la corde en rythme, 2-3 minutes, comme un boxeur. Ajoute des crochets légers au sac entre les sauts (débutant : 1-2 coups). Avancé : augmente la vitesse des sauts et frappe avec plus de puissance. Extérieur : fais-le sur un terrain plat, ajoute des déplacements latéraux.",
+        "Variantes": "Saut à la corde classique (sans sac, focus rythme). Saut à la corde avec double tour (avancé, plus rapide). Saut à la corde avec esquives (extérieur, simule un combat).",
+        "Conseils_Expert": "Garde les genoux souples pour éviter les chocs. Concentre-toi sur la respiration : expire à chaque saut. Fixe un point devant pour l’équilibre. Avancé : synchronise les frappes avec les sauts pour plus de fluidité.",
         "Raison": "",
-        "LitRPG_Narration": "‘Varkis grogne : Tiens bon, gamin, un boxeur saigne mais bouge toujours !’\n‘Kara ricane : Danse avec la corde, ou je te mords les chevilles !’\n‘Le vent de Thornval porte l’écho des combats anciens.’\n‘Chaque saut te forge, chaque frappe te libère.’\n‘Kara murmure : Plus vite, ou le chaos te rattrape.’\n‘Varkis aboie : Frappe ce sac comme si c’était ton destin !’",
-        "Explication": "Focus sur l’endurance et l’agilité avec des sauts rythmés.\nLe sac de frappe ajoute une dimension de boxe immersive.\nLitRPG : simule un entraînement de guerrier dans un monde brutal.",
+        "LitRPG_Narration": "‘Varkis grogne : Tiens bon, gamin, un boxeur saigne mais bouge toujours !’ ‘Kara ricane : Danse avec la corde, ou je te mords les chevilles !’ ‘Le vent de Thornval porte l’écho des combats anciens.’ ‘Chaque saut te forge, chaque frappe te libère.’ ‘Kara murmure : Plus vite, ou le chaos te rattrape.’ ‘Varkis aboie : Frappe ce sac comme si c’était ton destin !’",
+        "Explication": "Focus sur l’endurance et l’agilité avec des sauts rythmés. Le sac de frappe ajoute une dimension de boxe immersive. LitRPG : simule un entraînement de guerrier dans un monde brutal.",
         "Timing": "30 sauts = 60 sec",
         "Prep_Time": "5",
         "Effort_Time": "60",
         "Rest_Time": "30",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Saut_a_la_corde_002",
@@ -4091,21 +4091,21 @@ const db_exercices = [
         "Notation_Difficulte": "3",
         "Notation_Efficacite": "4",
         "Intro_Simple": "Saute plus fort, deviens plus vif !",
-        "Description": "Fixe les poids aux chevilles (1,25 lbs pour débutant, 2,5 lbs pour avancé).\nTiens la corde, pieds joints, dans ton sous-sol ou sur un terrain plat.\nSaute 2-3 minutes à rythme modéré, en gardant le dos droit.\nDébutant : focus sur la régularité, petits sauts.\nAvancé : augmente la vitesse et ajoute des sauts croisés.\nExtérieur : intègre des déplacements en cercle pour plus de dynamisme.",
-        "Variantes": "Saut à la corde simple (sans poids, focus fluidité).\nSaut à la corde avec double tour (avancé, plus rapide).\nSaut à la corde avec sprint court (extérieur, 10 m après 30 sec).",
-        "Conseils_Expert": "Contracte le core pour stabiliser chaque saut.\nAtterris doucement sur la pointe des pieds.\nUtilise les poignets, pas les bras, pour tourner la corde.\nExtérieur : vérifie le sol pour éviter les obstacles.",
+        "Description": "Fixe les poids aux chevilles (1,25 lbs pour débutant, 2,5 lbs pour avancé). Tiens la corde, pieds joints, dans ton sous-sol ou sur un terrain plat. Saute 2-3 minutes à rythme modéré, en gardant le dos droit. Débutant : focus sur la régularité, petits sauts. Avancé : augmente la vitesse et ajoute des sauts croisés. Extérieur : intègre des déplacements en cercle pour plus de dynamisme.",
+        "Variantes": "Saut à la corde simple (sans poids, focus fluidité). Saut à la corde avec double tour (avancé, plus rapide). Saut à la corde avec sprint court (extérieur, 10 m après 30 sec).",
+        "Conseils_Expert": "Contracte le core pour stabiliser chaque saut. Atterris doucement sur la pointe des pieds. Utilise les poignets, pas les bras, pour tourner la corde. Extérieur : vérifie le sol pour éviter les obstacles.",
         "Raison": "",
-        "LitRPG_Narration": "‘Varkis grogne : Bouge tes pieds, ou Thornval t’engloutira !’\n‘Kara ricane : Plus vite, ou mes griffes te rattrapent !’\n‘Le sol tremble sous tes sauts, défiant les ombres.’\n‘Chaque tour de corde forge ton agilité.’\n‘Varkis marmonne : Un guerrier ne s’arrête jamais.’\n‘Kara hurle : Saute, ou le chaos te dévore !’",
-        "Explication": "Focus sur l’endurance et l’agilité avec des sauts lestés.\nLes poids aux chevilles augmentent l’intensité.\nLitRPG : entraîne-toi comme un survivant dans un monde impitoyable.",
+        "LitRPG_Narration": "‘Varkis grogne : Bouge tes pieds, ou Thornval t’engloutira !’ ‘Kara ricane : Plus vite, ou mes griffes te rattrapent !’ ‘Le sol tremble sous tes sauts, défiant les ombres.’ ‘Chaque tour de corde forge ton agilité.’ ‘Varkis marmonne : Un guerrier ne s’arrête jamais.’ ‘Kara hurle : Saute, ou le chaos te dévore !’",
+        "Explication": "Focus sur l’endurance et l’agilité avec des sauts lestés. Les poids aux chevilles augmentent l’intensité. LitRPG : entraîne-toi comme un survivant dans un monde impitoyable.",
         "Timing": "30 sauts = 60 sec",
         "Prep_Time": "5",
         "Effort_Time": "60",
         "Rest_Time": "30",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "ShadowBoxing_001",
@@ -4128,10 +4128,10 @@ const db_exercices = [
         "Effort_Time": "270",
         "Rest_Time": "30",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Shrugs_001",
@@ -4154,10 +4154,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Shrugs_002",
@@ -4180,10 +4180,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Shrugs_003",
@@ -4206,10 +4206,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Shrugs_004",
@@ -4232,10 +4232,10 @@ const db_exercices = [
         "Effort_Time": "50",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "SitUps_001",
@@ -4250,7 +4250,7 @@ const db_exercices = [
         "Description": "Débutant : Allonge-toi sur ton banc Marcy MD-859 ou au sol, genoux pliés, pieds à plat, tiens ta barre haltère 15 pouces (5-10 lbs) contre ta poitrine, mains écartées. Contracte les abdos, monte jusqu’à mi-hauteur, redescends sans claquer le dos. Intermédiaire : Charge 15-20 lbs, monte jusqu’aux genoux, tiens 1 sec en haut, descends lentement. Avancé : 25-30 lbs, monte complètement assis, tends la barre devant toi en haut, contrôle la descente. Extérieur : Sur le terrain, trouve un coin plat, ajuste si le sol est dur, laisse le poids te défier.",
         "Variantes": "Avec torsion : Monte et tourne la barre d’un côté, alterne. Avec banc incliné : Sur le Marcy incliné, tiens la barre, monte plus fort. Avec pause : Tiens 2 sec en haut, fais brûler les abdos.",
         "Conseils_Expert": "Garde le dos droit en montant, pas d’arrondi foireux. Serre les abdos, pas juste les bras qui poussent. Respire : expire en haut, inspire en bas. Extérieur : protège ton dos si le sol est rude.",
-        "Raison": "8-12 reps avec haltère (15\"), charge modérée pour abdos.",
+        "Raison": "8-12 reps avec haltère (15\\\"), charge modérée pour abdos.",
         "LitRPG_Narration": "Varkis grogne : ‘Le fer sur toi, lève-toi ou reste un mort !’ Kara glapit : ‘Haut, vite, fais hurler ton bide ou je te fais plier !’ Varkis : ‘Chaque montée, un ennemi à terre.’ Kara : ‘Tends ce poids, deviens roc ou deviens vent !’ Varkis : ‘Les abdos mous cèdent, pas toi.’",
         "Explication": "Focus : Core, puissance brute sous charge. Matos : Barre haltère, ton arme d’acier. LitRPG : Force pour soulever, vitalité pour tenir.",
         "Timing": "10 reps = 45 sec",
@@ -4258,10 +4258,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "SitUps_002",
@@ -4284,10 +4284,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "SitUps_003",
@@ -4310,10 +4310,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "SitUps_004",
@@ -4336,10 +4336,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Skull_Crushers_001",
@@ -4362,10 +4362,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Skull_Crushers_002",
@@ -4388,10 +4388,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Skull_Crushers_003",
@@ -4414,10 +4414,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Skull_Crushers_004",
@@ -4440,10 +4440,10 @@ const db_exercices = [
         "Effort_Time": "45",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Sprints_001",
@@ -4466,10 +4466,10 @@ const db_exercices = [
         "Effort_Time": "240",
         "Rest_Time": "40",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Squat_001",
@@ -4492,10 +4492,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Squat_002",
@@ -4518,10 +4518,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Squat_003",
@@ -4544,10 +4544,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Squat_004",
@@ -4570,10 +4570,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Squat_005",
@@ -4596,10 +4596,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Squat_006",
@@ -4622,10 +4622,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Squat_007",
@@ -4648,10 +4648,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Squat_008",
@@ -4674,10 +4674,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Stepper_001",
@@ -4689,21 +4689,21 @@ const db_exercices = [
         "Notation_Difficulte": "2",
         "Notation_Efficacite": "4",
         "Intro_Simple": "Monte, bouge, domine ton rythme !",
-        "Description": "Place-toi sur le vélo elliptique Reebok Reflex Step dans ton sous-sol.\nPieds bien positionnés, tiens les poignées légèrement.\nPédale 3-5 minutes à vitesse modérée (débutant : cadence lente).\nAvancé : augmente la résistance et pousse 5-7 minutes.\nExtérieur : simule le stepper avec des montées rapides sur terrain incliné.\nGarde le dos droit et respire profondément.",
-        "Variantes": "Stepper lent (focus sur rythme régulier).\nStepper avec sprint (avancé, 30 sec à fond).\nMontées d’escaliers (extérieur, remplace le stepper).",
-        "Conseils_Expert": "Contracte le core pour stabiliser ton mouvement.\nPousse avec les talons, pas les orteils.\nRespire en rythme : inspire sur 2 pas, expire sur 2.\nExtérieur : trouve un terrain stable pour éviter les glissades.",
+        "Description": "Place-toi sur le vélo elliptique Reebok Reflex Step dans ton sous-sol. Pieds bien positionnés, tiens les poignées légèrement. Pédale 3-5 minutes à vitesse modérée (débutant : cadence lente). Avancé : augmente la résistance et pousse 5-7 minutes. Extérieur : simule le stepper avec des montées rapides sur terrain incliné. Garde le dos droit et respire profondément.",
+        "Variantes": "Stepper lent (focus sur rythme régulier). Stepper avec sprint (avancé, 30 sec à fond). Montées d’escaliers (extérieur, remplace le stepper).",
+        "Conseils_Expert": "Contracte le core pour stabiliser ton mouvement. Pousse avec les talons, pas les orteils. Respire en rythme : inspire sur 2 pas, expire sur 2. Extérieur : trouve un terrain stable pour éviter les glissades.",
         "Raison": "",
-        "LitRPG_Narration": "‘Varkis grogne : Continue, ou Thornval te piétinera !’\n‘Kara ricane : Plus vite, ou je te vole ton souffle !’\n‘Chaque pas défie les ombres du chaos.’\n‘Ton cœur bat comme un tambour de guerre.’\n‘Varkis marmonne : Un survivant ne ralentit pas.’\n‘Kara hurle : Grimpe, ou le vent t’emporte !’",
-        "Explication": "Focus sur l’endurance et la vitalité avec un mouvement continu.\nLe Reebok Reflex Step simule une montée intense.\nLitRPG : entraîne-toi comme un voyageur dans un monde hostile.",
+        "LitRPG_Narration": "‘Varkis grogne : Continue, ou Thornval te piétinera !’ ‘Kara ricane : Plus vite, ou je te vole ton souffle !’ ‘Chaque pas défie les ombres du chaos.’ ‘Ton cœur bat comme un tambour de guerre.’ ‘Varkis marmonne : Un survivant ne ralentit pas.’ ‘Kara hurle : Grimpe, ou le vent t’emporte !’",
+        "Explication": "Focus sur l’endurance et la vitalité avec un mouvement continu. Le Reebok Reflex Step simule une montée intense. LitRPG : entraîne-toi comme un voyageur dans un monde hostile.",
         "Timing": "60 pas = 60 sec",
         "Prep_Time": "5",
         "Effort_Time": "60",
         "Rest_Time": "30",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "StepUp_001",
@@ -4726,10 +4726,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "StepUp_002",
@@ -4752,10 +4752,10 @@ const db_exercices = [
         "Effort_Time": "48",
         "Rest_Time": "25",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "StepUp_003",
@@ -4778,10 +4778,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "StepUp_004",
@@ -4804,10 +4804,10 @@ const db_exercices = [
         "Effort_Time": "40",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Strikes_001",
@@ -4830,10 +4830,10 @@ const db_exercices = [
         "Effort_Time": "270",
         "Rest_Time": "30",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Triceps_001",
@@ -4856,10 +4856,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Triceps_002",
@@ -4882,10 +4882,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Triceps_003",
@@ -4908,10 +4908,10 @@ const db_exercices = [
         "Effort_Time": "35",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Triceps_004",
@@ -4934,10 +4934,10 @@ const db_exercices = [
         "Effort_Time": "30",
         "Rest_Time": "20",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Velo_Randonnee_001",
@@ -4949,21 +4949,21 @@ const db_exercices = [
         "Notation_Difficulte": "3",
         "Notation_Efficacite": "4",
         "Intro_Simple": "Pédale loin, explore l’inconnu !",
-        "Description": "Monte sur le vélo elliptique Reebok Reflex Step dans ton sous-sol.\nAjuste les pédales, saisis les poignées, garde le dos droit.\nPédale 7-10 minutes à rythme modéré (débutant : résistance faible).\nAvancé : augmente la résistance et alterne 1 min rapide, 1 min lente.\nExtérieur : simule une randonnée sur terrain varié, pédale sur un sentier vallonné.\nRespire calmement, imagine un sentier sauvage.",
-        "Variantes": "Vélo lent (faible résistance, focus endurance).\nVélo avec intervalles (avancé, 30 sec sprint toutes les 2 min).\nVélo en montée (extérieur, trouve une pente raide).",
-        "Conseils_Expert": "Engage le core pour rester stable sur le vélo.\nPousse avec les talons pour activer les quadriceps.\nRespire en rythme : inspire 4 tours, expire 4 tours.\nExtérieur : surveille le terrain pour éviter les obstacles.",
+        "Description": "Monte sur le vélo elliptique Reebok Reflex Step dans ton sous-sol. Ajuste les pédales, saisis les poignées, garde le dos droit. Pédale 7-10 minutes à rythme modéré (débutant : résistance faible). Avancé : augmente la résistance et alterne 1 min rapide, 1 min lente. Extérieur : simule une randonnée sur terrain varié, pédale sur un sentier vallonné. Respire calmement, imagine un sentier sauvage.",
+        "Variantes": "Vélo lent (faible résistance, focus endurance). Vélo avec intervalles (avancé, 30 sec sprint toutes les 2 min). Vélo en montée (extérieur, trouve une pente raide).",
+        "Conseils_Expert": "Engage le core pour rester stable sur le vélo. Pousse avec les talons pour activer les quadriceps. Respire en rythme : inspire 4 tours, expire 4 tours. Extérieur : surveille le terrain pour éviter les obstacles.",
         "Raison": "",
-        "LitRPG_Narration": "‘Varkis grogne : Pédale, ou les sentiers de Thornval t’engloutiront !’\n‘Kara ricane : Plus vite, ou je te perds dans les ombres !’\n‘Le vent des terres sauvages hurle dans tes oreilles.’\n‘Chaque tour forge ton âme d’explorateur.’\n‘Varkis marmonne : Un survivant ne s’arrête pas.’\n‘Kara hurle : Fonce, ou le chaos te traque !’",
-        "Explication": "Focus sur l’endurance et la vitalité avec un pédalage exploratoire.\nLe Reebok Reflex Step simule une randonnée immersive.\nLitRPG : entraîne-toi comme un voyageur dans un monde indompté.",
+        "LitRPG_Narration": "‘Varkis grogne : Pédale, ou les sentiers de Thornval t’engloutiront !’ ‘Kara ricane : Plus vite, ou je te perds dans les ombres !’ ‘Le vent des terres sauvages hurle dans tes oreilles.’ ‘Chaque tour forge ton âme d’explorateur.’ ‘Varkis marmonne : Un survivant ne s’arrête pas.’ ‘Kara hurle : Fonce, ou le chaos te traque !’",
+        "Explication": "Focus sur l’endurance et la vitalité avec un pédalage exploratoire. Le Reebok Reflex Step simule une randonnée immersive. LitRPG : entraîne-toi comme un voyageur dans un monde indompté.",
         "Timing": "60 tours = 60 sec",
         "Prep_Time": "5",
         "Effort_Time": "60",
         "Rest_Time": "30",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     },
     {
         "Key": "Velo_Urbain_001",
@@ -4975,20 +4975,20 @@ const db_exercices = [
         "Notation_Difficulte": "2",
         "Notation_Efficacite": "4",
         "Intro_Simple": "Pédale fort, conquiers la ville !",
-        "Description": "Monte sur le vélo elliptique Reebok Reflex Step dans ton sous-sol.\nAjuste les pédales, tiens les poignées légèrement, dos droit.\nPédale 5-7 minutes à un rythme modéré (débutant : basse résistance).\nAvancé : augmente la résistance et pédale 8-10 minutes avec des sprints de 20 sec.\nExtérieur : simule une balade urbaine sur terrain plat ou avec légères pentes.\nRespire profondément, garde le rythme comme si tu évitais la circulation.",
-        "Variantes": "Vélo lent (basse résistance, focus fluidité).\nVélo avec sprints (avancé, 30 sec à fond toutes les 2 min).\nVélo en montée (extérieur, trouve une pente douce).",
-        "Conseils_Expert": "Contracte le core pour stabiliser ton pédalage.\nPousse avec les talons pour engager les cuisses.\nRespire en rythme : inspire 3 tours, expire 3 tours.\nExtérieur : vérifie le terrain pour éviter les obstacles.",
+        "Description": "Monte sur le vélo elliptique Reebok Reflex Step dans ton sous-sol. Ajuste les pédales, tiens les poignées légèrement, dos droit. Pédale 5-7 minutes à un rythme modéré (débutant : basse résistance). Avancé : augmente la résistance et pédale 8-10 minutes avec des sprints de 20 sec. Extérieur : simule une balade urbaine sur terrain plat ou avec légères pentes. Respire profondément, garde le rythme comme si tu évitais la circulation.",
+        "Variantes": "Vélo lent (basse résistance, focus fluidité). Vélo avec sprints (avancé, 30 sec à fond toutes les 2 min). Vélo en montée (extérieur, trouve une pente douce).",
+        "Conseils_Expert": "Contracte le core pour stabiliser ton pédalage. Pousse avec les talons pour engager les cuisses. Respire en rythme : inspire 3 tours, expire 3 tours. Extérieur : vérifie le terrain pour éviter les obstacles.",
         "Raison": "",
-        "LitRPG_Narration": "‘Varkis grogne : Pédale, ou Thornval t’écrasera sous ses roues !’\n‘Kara ricane : Plus vite, ou je te dépasse en riant !’\n‘Le vent des routes maudites hurle à tes oreilles.’\n‘Chaque tour de pédale forge ton endurance.’\n‘Varkis marmonne : Un survivant ne s’arrête jamais.’\n‘Kara hurle : Fonce, ou le chaos te rattrape !’",
-        "Explication": "Focus sur l’endurance et la vitalité avec un pédalage dynamique.\nLe Reebok Reflex Step simule une course urbaine intense.\nLitRPG : entraîne-toi comme un messager dans un monde hostile.",
+        "LitRPG_Narration": "‘Varkis grogne : Pédale, ou Thornval t’écrasera sous ses roues !’ ‘Kara ricane : Plus vite, ou je te dépasse en riant !’ ‘Le vent des routes maudites hurle à tes oreilles.’ ‘Chaque tour de pédale forge ton endurance.’ ‘Varkis marmonne : Un survivant ne s’arrête jamais.’ ‘Kara hurle : Fonce, ou le chaos te rattrape !’",
+        "Explication": "Focus sur l’endurance et la vitalité avec un pédalage dynamique. Le Reebok Reflex Step simule une course urbaine intense. LitRPG : entraîne-toi comme un messager dans un monde hostile.",
         "Timing": "60 tours = 60 sec",
         "Prep_Time": "5",
         "Effort_Time": "60",
         "Rest_Time": "30",
         "End_Time": "5",
-        "Prep_Sound": "prep.mp3",
-        "Effort_Sound": "effort.mp3",
-        "Rest_Sound": "rest.mp3",
-        "End_Sound": "end.mp3"
+        "Prep_Sound": "",
+        "Effort_Sound": "",
+        "Rest_Sound": "",
+        "End_Sound": ""
     }
 ];

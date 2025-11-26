@@ -245,7 +245,7 @@ const CATEGORY_ORDER = [
     "Force Maximale",
     "Puissance",
     "Technique",
-    "Conditionnement Cardiov asculaire",
+    "Conditionnement Cardiovasculaire",
     "Autres"
 ];
 
@@ -354,6 +354,21 @@ function findExerciseDetails(exerciseName) {
     return EXERCISE_DETAILS.find(ex => ex.Exercice === exerciseName);
 }
 
+// Format text with line breaks at each sentence
+function formatTextWithLineBreaks(text) {
+    if (!text) return 'N/A';
+    // Remplacer les fins de phrase (. ! ?) par des sauts de ligne HTML
+    // Cette regex améliorée gère les apostrophes de fin de citation.
+    let formattedText = text.replace(/([.!?])(’|'|‘|’)?(\s*)/g, '$1$2<br>');
+    // Remplacer les sauts de ligne explicites (\n et \\n) par des sauts de ligne HTML
+    formattedText = formattedText.replace(/\\n/g, '<br>'); // Gère le cas '\\n'
+    formattedText = formattedText.replace(/\n/g, '<br>');  // Gère le cas '\n'
+
+    // Nettoyage esthétique : supprime les apostrophes seules en début de ligne après un <br>
+    // et harmonise les apostrophes pour éviter les doublons.
+    return formattedText.replace(/<br>\s*’\s*‘/g, '<br>‘');
+}
+
 // Display exercise information
 function displayExerciseInfo(exerciseData) {
     const infoContent = document.getElementById('info-content');
@@ -365,12 +380,12 @@ function displayExerciseInfo(exerciseData) {
     }
 
     infoContent.innerHTML = `
-        <p><strong>📝 Description:</strong> ${exerciseData.Description || 'N/A'}</p>
+        <p><strong>📝 Description:</strong><br>${formatTextWithLineBreaks(exerciseData.Description)}</p>
         <p><strong>🛠️ Équipement:</strong> ${exerciseData.Equipement || 'N/A'}</p>
         <p><strong>📊 Difficulté:</strong> ${exerciseData.Notation_Difficulte || 'N/A'}/5 | <strong>Efficacité:</strong> ${exerciseData.Notation_Efficacite || 'N/A'}/5</p>
-        ${exerciseData.Variantes ? `<p><strong>🔄 Variantes:</strong> ${exerciseData.Variantes}</p>` : ''}
-        ${exerciseData.Conseils_Expert ? `<p><strong>💡 Conseils:</strong> ${exerciseData.Conseils_Expert}</p>` : ''}
-        ${exerciseData.LitRPG_Narration ? `<p><strong>⚔️ Narration:</strong> <em>${exerciseData.LitRPG_Narration}</em></p>` : ''}
+        ${exerciseData.Variantes ? `<p><strong>🔄 Variantes:</strong><br>${formatTextWithLineBreaks(exerciseData.Variantes)}</p>` : ''}
+        ${exerciseData.Conseils_Expert ? `<p><strong>💡 Conseils:</strong><br>${formatTextWithLineBreaks(exerciseData.Conseils_Expert)}</p>` : ''}
+        ${exerciseData.LitRPG_Narration ? `<p><strong>⚔️ Narration:</strong><br><em>${formatTextWithLineBreaks(exerciseData.LitRPG_Narration)}</em></p>` : ''}
     `;
     infoSection.style.display = 'block';
 }
@@ -396,7 +411,7 @@ function initializeTimer(exerciseData) {
 
     timerSection.style.display = 'block';
 
-    // Store times and sounds for timer functionality
+    // Store times for timer functionality
     window.timerPhases = {
         prep: prepTime,
         effort: effortTime,
@@ -404,33 +419,127 @@ function initializeTimer(exerciseData) {
         end: endTime
     };
 
-    // Store sound files
-    window.timerSounds = {
-        prep: exerciseData.Prep_Sound || null,
-        effort: exerciseData.Effort_Sound || null,
-        rest: exerciseData.Rest_Sound || null,
-        end: exerciseData.End_Sound || null
-    };
-
     // Reset timer state
     resetTimer();
 }
 
-// Play sound for current phase
-function playPhaseSound(phaseName) {
-    if (!window.timerSounds || !window.timerSounds[phaseName]) return;
+// --- SOUND MANAGER LOGIC ---
 
-    try {
-        const audio = new Audio(window.timerSounds[phaseName]);
-        audio.play().catch(err => {
-            console.log('Impossible de jouer le son:', err);
-        });
-    } catch (error) {
-        console.log('Erreur audio:', error);
+let currentAmbientAudio = null;
+
+// Initialize Theme Selector
+function initSoundThemes() {
+    const selector = document.getElementById('sound-theme');
+    if (!selector || typeof SOUND_MANIFEST === 'undefined') return;
+
+    // Clear existing options except Random
+    selector.innerHTML = '<option value="random">🎲 Aléatoire</option>';
+
+    // Add themes from manifest
+    for (const [id, name] of Object.entries(SOUND_MANIFEST.themes)) {
+        const option = document.createElement('option');
+        option.value = id;
+        option.textContent = `🎵 ${name}`;
+        selector.appendChild(option);
     }
 }
 
-// Timer functionality
+// Call initialization when DOM is ready
+if (typeof SOUND_MANIFEST !== 'undefined') {
+    initSoundThemes();
+}
+
+// Play Ambient Sound
+function playAmbient() {
+    if (typeof SOUND_MANIFEST === 'undefined' || !SOUND_MANIFEST.ambient) return;
+
+    // Stop existing ambient if any
+    stopAmbient();
+
+    let ambientFile = '';
+
+    // Handle array of ambient sounds (random pick)
+    if (Array.isArray(SOUND_MANIFEST.ambient)) {
+        if (SOUND_MANIFEST.ambient.length === 0) return;
+        const randomIndex = Math.floor(Math.random() * SOUND_MANIFEST.ambient.length);
+        ambientFile = `sounds/${SOUND_MANIFEST.ambient[randomIndex]}`;
+    } else {
+        // Legacy string support
+        ambientFile = `sounds/${SOUND_MANIFEST.ambient}`;
+    }
+
+    currentAmbientAudio = new Audio(ambientFile);
+    currentAmbientAudio.loop = true;
+    currentAmbientAudio.volume = 0.5;
+
+    currentAmbientAudio.play().catch(err => {
+        console.log('Impossible de jouer l\'ambiance:', err);
+    });
+}
+
+function stopAmbient() {
+    if (currentAmbientAudio) {
+        currentAmbientAudio.pause();
+        currentAmbientAudio.currentTime = 0;
+        currentAmbientAudio = null;
+    }
+}
+
+// Get sound file for phase based on theme
+function getPhaseSoundFile(phaseName) {
+    if (typeof SOUND_MANIFEST === 'undefined') {
+        console.log('⚠️ SOUND_MANIFEST not loaded');
+        return null;
+    }
+
+    const themeSelector = document.getElementById('sound-theme');
+    const selectedTheme = themeSelector ? themeSelector.value : 'random';
+
+    console.log(`🔊 getPhaseSoundFile: phase="${phaseName}", theme="${selectedTheme}"`);
+
+    // Phase names in manifest are capitalized: Prep, Effort, Rest, End
+    const phasePrefix = phaseName.charAt(0).toUpperCase() + phaseName.slice(1);
+
+    let eligibleFiles = SOUND_MANIFEST.files.filter(f => f.startsWith(phasePrefix));
+    console.log(`🔊 Files starting with "${phasePrefix}":`, eligibleFiles);
+
+    if (selectedTheme !== 'random') {
+        // Filter by theme ID (e.g., _01)
+        eligibleFiles = eligibleFiles.filter(f => f.includes(`_${selectedTheme}`));
+        console.log(`🔊 After theme filter (_${selectedTheme}):`, eligibleFiles);
+    }
+
+    if (eligibleFiles.length === 0) {
+        console.log('⚠️ No eligible sound files found');
+        return null;
+    }
+
+    // Pick random file from eligible list
+    const randomFile = eligibleFiles[Math.floor(Math.random() * eligibleFiles.length)];
+    const fullPath = `sounds/${randomFile}`;
+    console.log(`✅ Selected sound: ${fullPath}`);
+    return fullPath;
+}
+
+// Play sound for current phase
+function playPhaseSound(phaseName) {
+    console.log(`🎵 playPhaseSound called for: ${phaseName}`);
+
+    const soundFile = getPhaseSoundFile(phaseName);
+    if (soundFile) {
+        console.log(`🎵 Playing sound: ${soundFile}`);
+        try {
+            const audio = new Audio(soundFile);
+            audio.play().catch(err => console.log('Erreur audio:', err));
+        } catch (error) {
+            console.log('Erreur audio:', error);
+        }
+    } else {
+        console.log(`⚠️ No sound file found for phase: ${phaseName}`);
+    }
+}
+
+// --- TIMER FUNCTIONALITY ---
 let timerInterval = null;
 let currentPhaseIndex = 0;
 let currentTime = 0;
@@ -447,6 +556,9 @@ function startTimer() {
 
     // If timer is already running, don't start again
     if (timerInterval) return;
+
+    // Start Ambient
+    playAmbient();
 
     const currentPhaseName = phaseNames[currentPhaseIndex];
     const phaseTime = window.timerPhases[currentPhaseName];
@@ -477,6 +589,7 @@ function startTimer() {
                 clearInterval(timerInterval);
                 timerInterval = null;
                 document.getElementById('current-phase').textContent = '✅ Terminé!';
+                stopAmbient();
                 return;
             }
 
@@ -496,6 +609,7 @@ function pauseTimer() {
         clearInterval(timerInterval);
         timerInterval = null;
         document.getElementById('current-phase').textContent += ' ⏸️ (Pause)';
+        stopAmbient();
     }
 }
 
@@ -504,6 +618,8 @@ function resetTimer() {
         clearInterval(timerInterval);
         timerInterval = null;
     }
+
+    stopAmbient();
 
     currentPhaseIndex = 0;
     currentTime = 0;

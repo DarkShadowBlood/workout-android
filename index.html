@@ -51,6 +51,12 @@
                 <div class="timer-phase" id="end-timer">End: <span>0</span>s</div>
             </div>
             <div class="timer-controls">
+                <div class="theme-selector">
+                    <label for="sound-theme">🎵 Thème:</label>
+                    <select id="sound-theme">
+                        <option value="random">🎲 Aléatoire</option>
+                    </select>
+                </div>
                 <button id="start-timer" class="btn-timer">▶️ Start</button>
                 <button id="pause-timer" class="btn-timer">⏸️ Pause</button>
                 <button id="reset-timer" class="btn-timer">🔄 Reset</button>
@@ -147,6 +153,7 @@
     <!-- Data Injection Point - Scripts loaded at end of body for proper DOM loading -->
     <script src="data_exercices.js"></script>
     <script src="data_exercices_complet.js"></script>
+    <script src="sound_manifest.js"></script>
     <script>
         // Map external data to internal variable for compatibility
         const EXERCISE_DATA = exercicesCategories;
