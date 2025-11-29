@@ -427,7 +427,6 @@ function initializeTimer(exerciseData) {
 
 let currentAmbientAudio = null;
 
-// Initialize Theme Selector
 function initSoundThemes() {
     const selector = document.getElementById('sound-theme');
     if (!selector || typeof SOUND_MANIFEST === 'undefined') return;
@@ -444,13 +443,38 @@ function initSoundThemes() {
     }
 }
 
+// Initialize Ambient Selector
+function initAmbientSelector() {
+    const selector = document.getElementById('ambient-music');
+    if (!selector || typeof SOUND_MANIFEST === 'undefined' || !SOUND_MANIFEST.ambient) return;
+
+    // Add ambient files from manifest
+    if (Array.isArray(SOUND_MANIFEST.ambient)) {
+        SOUND_MANIFEST.ambient.forEach(file => {
+            const option = document.createElement('option');
+            option.value = file;
+            option.textContent = `🎵 ${file}`;
+            selector.appendChild(option);
+        });
+    }
+}
+
 // Call initialization when DOM is ready
 if (typeof SOUND_MANIFEST !== 'undefined') {
     initSoundThemes();
+    initAmbientSelector();
 }
 
 // Play Ambient Sound
 function playAmbient() {
+    const ambientSelector = document.getElementById('ambient-music');
+    const selectedAmbient = ambientSelector ? ambientSelector.value : 'none';
+
+    if (selectedAmbient === 'none') {
+        stopAmbient();
+        return;
+    }
+
     if (typeof SOUND_MANIFEST === 'undefined' || !SOUND_MANIFEST.ambient) return;
 
     // Stop existing ambient if any
@@ -458,14 +482,19 @@ function playAmbient() {
 
     let ambientFile = '';
 
-    // Handle array of ambient sounds (random pick)
-    if (Array.isArray(SOUND_MANIFEST.ambient)) {
-        if (SOUND_MANIFEST.ambient.length === 0) return;
-        const randomIndex = Math.floor(Math.random() * SOUND_MANIFEST.ambient.length);
-        ambientFile = `sounds/${SOUND_MANIFEST.ambient[randomIndex]}`;
+    if (selectedAmbient === 'random') {
+        // Handle array of ambient sounds (random pick)
+        if (Array.isArray(SOUND_MANIFEST.ambient)) {
+            if (SOUND_MANIFEST.ambient.length === 0) return;
+            const randomIndex = Math.floor(Math.random() * SOUND_MANIFEST.ambient.length);
+            ambientFile = `sounds/${SOUND_MANIFEST.ambient[randomIndex]}`;
+        } else {
+            // Legacy string support
+            ambientFile = `sounds/${SOUND_MANIFEST.ambient}`;
+        }
     } else {
-        // Legacy string support
-        ambientFile = `sounds/${SOUND_MANIFEST.ambient}`;
+        // Specific file selected
+        ambientFile = `sounds/${selectedAmbient}`;
     }
 
     currentAmbientAudio = new Audio(ambientFile);
@@ -484,6 +513,13 @@ function stopAmbient() {
         currentAmbientAudio = null;
     }
 }
+
+// Update ambient immediately if changed during timer
+document.getElementById('ambient-music')?.addEventListener('change', function () {
+    if (timerInterval) {
+        playAmbient();
+    }
+});
 
 // Get sound file for phase based on theme
 function getPhaseSoundFile(phaseName) {
@@ -538,7 +574,6 @@ function playPhaseSound(phaseName) {
         console.log(`⚠️ No sound file found for phase: ${phaseName}`);
     }
 }
-
 // --- TIMER FUNCTIONALITY ---
 let timerInterval = null;
 let currentPhaseIndex = 0;
