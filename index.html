@@ -72,6 +72,35 @@
             <div id="current-phase" class="current-phase"></div>
         </div>
 
+        <!-- Audio Player Section -->
+        <div id="audio-player-container" class="exercise-section">
+            <h3>🎵 Lecteur Ambiance</h3>
+            <div id="track-info">
+                 <span id="track-title"></span>
+            </div>
+            <audio id="ambient-audio-player" style="display: none;"></audio>
+    
+            <div class="progress-container" id="progress-container">
+                <div class="time-display">
+                    <span id="current-time">00:00</span>
+                    <span id="total-duration">00:00</span>
+                </div>
+                <div class="progress-bar-wrapper">
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+    
+            <div class="audio-controls">
+                <button id="prev-track" class="btn-audio">⏮️</button>
+                <button id="play-pause-audio" class="btn-audio">▶️</button>
+                <button id="next-track" class="btn-audio">⏭️</button>
+                <button id="shuffle-playlist" class="btn-audio">🔀</button>
+            </div>
+            <div id="playlist-container">
+                <ul id="playlist"></ul>
+            </div>
+        </div>
+
         <!-- 3. Log Section -->
         <div id="exercise-log" class="exercise-section">
             <h3>📝 Log</h3>

@@ -291,3 +291,149 @@ th {
         max-width: 100%;
     }
 }
+
+/* Audio Player Section */
+#audio-player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#audio-player-container h3 {
+    color: #03dac6; /* Match other section headers */
+}
+
+#track-info {
+    font-size: 0.9em;
+    color: #aaa;
+    margin-bottom: 15px;
+    height: 1.2em; /* Reserve space */
+    text-align: center;
+}
+
+#ambient-audio-player {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.audio-controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btn-audio {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 2em;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 0;
+    margin: 0;
+    line-height: 1; /* Fix alignment */
+}
+
+.btn-audio:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+#play-pause-audio {
+    font-size: 2.5em; /* Make play/pause bigger */
+}
+
+#shuffle-playlist.active {
+    color: var(--accent-color);
+}
+
+
+#playlist-container {
+    width: 100%;
+}
+
+#playlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 180px;
+    overflow-y: auto;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: var(--input-bg);
+}
+
+#playlist li {
+    padding: 12px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+    font-size: 0.95em;
+    transition: background-color 0.2s;
+}
+
+#playlist li:last-child {
+    border-bottom: none;
+}
+
+#playlist li:hover {
+    background-color: #3d3d3d;
+}
+
+#playlist li.active {
+    background-color: var(--accent-color);
+    color: #000;
+    font-weight: bold;
+}
+
+/* Custom scrollbar for playlist */
+#playlist::-webkit-scrollbar {
+    width: 8px;
+}
+
+#playlist::-webkit-scrollbar-track {
+    background: var(--input-bg);
+    border-radius: 6px;
+}
+
+#playlist::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 6px;
+    border: 2px solid var(--input-bg);
+}
+
+#playlist::-webkit-scrollbar-thumb:hover {
+    background-color: #777;
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.time-display {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.progress-bar-wrapper {
+    background-color: #444;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 10px;
+    width: 100%;
+}
+
+#progress-bar {
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}

@@ -703,3 +703,170 @@ exerciseInput.addEventListener('blur', function () {
         setTimeout(() => updateExerciseDisplay(this.value), 100);
     }
 });
+
+// --- AUDIO PLAYER LOGIC ---
+const ambientAudioPlayer = document.getElementById('ambient-audio-player');
+const playlistContainer = document.getElementById('playlist');
+const playPauseBtnAudio = document.getElementById('play-pause-audio');
+const prevBtn = document.getElementById('prev-track');
+const nextBtn = document.getElementById('next-track');
+const shuffleBtn = document.getElementById('shuffle-playlist');
+const trackInfoSpan = document.getElementById('track-info');
+const progressBar = document.getElementById('progress-bar');
+const progressBarWrapper = document.querySelector('.progress-bar-wrapper');
+const currentTimeSpan = document.getElementById('current-time');
+const totalDurationSpan = document.getElementById('total-duration');
+
+
+if (!ambientAudioPlayer || typeof SOUND_MANIFEST === 'undefined' || !SOUND_MANIFEST.ambient) {
+    const playerContainer = document.getElementById('audio-player-container');
+    if (playerContainer) {
+        playerContainer.style.display = 'none';
+    }
+} else {
+    let playlist = [...SOUND_MANIFEST.ambient];
+    let originalPlaylist = [...SOUND_MANIFEST.ambient]; // For unshuffling
+    let currentTrackIndex = 0;
+    let isShuffled = false;
+
+    // Helper to format time from seconds to MM:SS
+    function formatTime(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    }
+
+    function loadTrack(index) {
+        if (index >= 0 && index < playlist.length) {
+            currentTrackIndex = index;
+            const trackName = playlist[currentTrackIndex];
+            ambientAudioPlayer.src = `sounds/${trackName}`;
+            if(trackInfoSpan) trackInfoSpan.textContent = trackName.replace('.mp3', '');
+            updatePlaylistUI();
+        }
+    }
+
+    function updatePlaylistUI() {
+        if (!playlistContainer) return;
+        playlistContainer.innerHTML = '';
+        playlist.forEach((track, index) => {
+            const li = document.createElement('li');
+            li.textContent = track.replace('.mp3', '');
+            li.dataset.index = index;
+            if (index === currentTrackIndex) {
+                li.classList.add('active');
+            }
+            li.addEventListener('click', () => {
+                loadTrack(index);
+                ambientAudioPlayer.play();
+            });
+            playlistContainer.appendChild(li);
+        });
+    }
+
+    function playPauseAudio() {
+        if (ambientAudioPlayer.src) {
+            if (ambientAudioPlayer.paused) {
+                ambientAudioPlayer.play();
+            } else {
+                ambientAudioPlayer.pause();
+            }
+        } else {
+            // If no src is set, load the first track and play
+            loadTrack(0);
+            ambientAudioPlayer.play();
+        }
+    }
+
+    function updatePlayPauseIcon() {
+        if (playPauseBtnAudio) {
+            playPauseBtnAudio.textContent = ambientAudioPlayer.paused ? '▶️' : '⏸️';
+        }
+    }
+
+    function prevTrack() {
+        let newIndex = currentTrackIndex - 1;
+        if (newIndex < 0) {
+            newIndex = playlist.length - 1; // Loop to the end
+        }
+        loadTrack(newIndex);
+        ambientAudioPlayer.play();
+    }
+
+    function nextTrack() {
+        let newIndex = currentTrackIndex + 1;
+        if (newIndex >= playlist.length) {
+            newIndex = 0; // Loop to the beginning
+        }
+        loadTrack(newIndex);
+        ambientAudioPlayer.play();
+    }
+
+    function shufflePlaylist() {
+        isShuffled = !isShuffled;
+        const currentTrack = playlist[currentTrackIndex];
+
+        if (isShuffled) {
+            // Shuffle the playlist
+            // Fisher-Yates shuffle
+            for (let i = playlist.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [playlist[i], playlist[j]] = [playlist[j], playlist[i]];
+            }
+            if(shuffleBtn) shuffleBtn.classList.add('active');
+        } else {
+            // Unshuffle - revert to original order
+            playlist = [...originalPlaylist];
+            if(shuffleBtn) shuffleBtn.classList.remove('active');
+        }
+        
+        // Find the index of the previously playing track in the new playlist order
+        const newTrackIndex = playlist.indexOf(currentTrack);
+        if (newTrackIndex !== -1) {
+            currentTrackIndex = newTrackIndex;
+        } else {
+            // Failsafe if track not found
+            currentTrackIndex = 0;
+        }
+        
+        updatePlaylistUI();
+    }
+
+    // --- Progress Bar and Time Updates ---
+    function updateProgress() {
+        if (!ambientAudioPlayer.duration) return;
+        const progressPercent = (ambientAudioPlayer.currentTime / ambientAudioPlayer.duration) * 100;
+        if (progressBar) progressBar.style.width = `${progressPercent}%`;
+        if (currentTimeSpan) currentTimeSpan.textContent = formatTime(ambientAudioPlayer.currentTime);
+    }
+
+    function setDuration() {
+        if (totalDurationSpan) totalDurationSpan.textContent = formatTime(ambientAudioPlayer.duration);
+    }
+
+    function seek(e) {
+        if (!ambientAudioPlayer.duration) return;
+        const width = this.clientWidth;
+        const clickX = e.offsetX;
+        const duration = ambientAudioPlayer.duration;
+        ambientAudioPlayer.currentTime = (clickX / width) * duration;
+    }
+
+
+    // Event Listeners
+    if (playPauseBtnAudio) playPauseBtnAudio.addEventListener('click', playPauseAudio);
+    if (prevBtn) prevBtn.addEventListener('click', prevTrack);
+    if (nextBtn) nextBtn.addEventListener('click', nextTrack);
+    if (shuffleBtn) shuffleBtn.addEventListener('click', shufflePlaylist);
+
+    ambientAudioPlayer.addEventListener('play', updatePlayPauseIcon);
+    ambientAudioPlayer.addEventListener('pause', updatePlayPauseIcon);
+    ambientAudioPlayer.addEventListener('ended', nextTrack);
+    ambientAudioPlayer.addEventListener('timeupdate', updateProgress);
+    ambientAudioPlayer.addEventListener('loadedmetadata', setDuration);
+    if(progressBarWrapper) progressBarWrapper.addEventListener('click', seek);
+
+
+    // Initial Load
+    loadTrack(0);
+}
