@@ -884,7 +884,9 @@ if (!ambientAudioPlayer || typeof SOUND_MANIFEST === 'undefined' || !SOUND_MANIF
     if(progressBarWrapper) progressBarWrapper.addEventListener('click', seek);
 
 
-    // Initial Load
+    
+// Initial Load
+populateSessionSelector();
 // --- COUNTDOWN TIMER FUNCTIONALITY ---
 const countdownInput = document.getElementById('countdown-time-input');
 const startCountdownBtn = document.getElementById('start-countdown');
@@ -976,6 +978,69 @@ resetCountdownBtn.addEventListener('click', resetCountdown);
 }
 
 // --- SÉANCE PRÉ-PROGRAMMÉE ---
+
+// Nouvelle fonction pour charger une session depuis une URL
+async function loadSessionFromUrl(url) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`Erreur réseau: ${response.statusText}`);
+        }
+        const goalData = await response.json();
+        displaySessionGoal(goalData);
+        showStatus('✅ Objectif de séance chargé depuis l\'URL.');
+    } catch (error) {
+        alert("Erreur lors du chargement de la session : " + error.message);
+    }
+}
+
+// Nouvelle fonction pour peupler le sélecteur de session depuis GitHub
+async function populateSessionSelector() {
+    const selector = document.getElementById('session-url-selector');
+    if (!selector) return;
+
+    // URL de l'API GitHub pour le contenu de votre dossier Session
+    const GITHUB_API_URL = 'https://api.github.com/repos/darkshadowblood/workout-android/contents/Session';
+
+    try {
+        const response = await fetch(GITHUB_API_URL);
+        if (!response.ok) {
+            throw new Error('Impossible de lister les fichiers depuis GitHub.');
+        }
+        const files = await response.json();
+
+        // Filtrer pour ne garder que les fichiers .json
+        const jsonFiles = files.filter(file => file.name.endsWith('.json'));
+
+        if (jsonFiles.length > 0) {
+            // Ajouter une option par défaut
+            selector.innerHTML = '<option value="">-- Choisir une séance en ligne --</option>';
+            jsonFiles.forEach(file => {
+                const option = document.createElement('option');
+                option.value = file.download_url; // URL de téléchargement direct
+                option.textContent = file.name.replace('.json', '').replace(/_/g, ' ');
+                selector.appendChild(option);
+            });
+
+            // Ajouter un écouteur d'événement pour charger la session au changement
+            selector.addEventListener('change', (event) => {
+                const url = event.target.value;
+                if (url) {
+                    loadSessionFromUrl(url);
+                }
+            });
+
+        } else {
+             selector.innerHTML = '<option value="">-- Aucune séance en ligne trouvée --</option>';
+        }
+
+    } catch (error) {
+        console.error("Erreur GitHub API:", error);
+        selector.innerHTML = '<option value="">-- Erreur de chargement --</option>';
+    }
+}
+
+
 function loadSessionGoal(event) {
     const file = event.target.files[0];
     if (!file) {

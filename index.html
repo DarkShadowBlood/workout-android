@@ -35,7 +35,13 @@
             <p>Chargez un objectif de séance depuis un fichier de log (.json).</p>
             <div class="row">
                 <div class="col">
-                    <label for="session-goal-file">Charger un objectif :</label>
+                    <label for="session-url-selector">Séance en ligne :</label>
+                    <select id="session-url-selector" name="session-url-selector">
+                        <option value="">Chargement des séances...</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="session-goal-file">Charger un objectif (local) :</label>
                     <input type="file" id="session-goal-file" accept=".json" onchange="loadSessionGoal(event)">
                 </div>
             </div>
