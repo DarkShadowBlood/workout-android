@@ -29,6 +29,23 @@
 
         <hr style="border: 0; border-top: 1px solid #333; margin: 20px 0;">
 
+        <!-- Séance Pré-programmée Section -->
+        <div id="pre-programmed-session" class="exercise-section">
+            <h3>🎯 Séance Pré-programmée</h3>
+            <p>Chargez un objectif de séance depuis un fichier de log (.json).</p>
+            <div class="row">
+                <div class="col">
+                    <label for="session-goal-file">Charger un objectif :</label>
+                    <input type="file" id="session-goal-file" accept=".json" onchange="loadSessionGoal(event)">
+                </div>
+            </div>
+            <div id="session-goal-display">
+                <!-- Le contenu de l'objectif sera affiché ici -->
+            </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #333; margin: 20px 0;">
+
         <label>Exercice</label>
         <div class="autocomplete-container">
             <input type="text" id="exercise" placeholder="ex: Bench Press" autocomplete="off">

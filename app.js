@@ -974,3 +974,86 @@ startCountdownBtn.addEventListener('click', startCountdown);
 pauseCountdownBtn.addEventListener('click', pauseCountdown);
 resetCountdownBtn.addEventListener('click', resetCountdown);
 }
+
+// --- SÉANCE PRÉ-PROGRAMMÉE ---
+function loadSessionGoal(event) {
+    const file = event.target.files[0];
+    if (!file) {
+        return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = function(e) {
+        try {
+            const goalData = JSON.parse(e.target.result);
+            displaySessionGoal(goalData);
+        } catch (error) {
+            alert("Erreur lors de la lecture du fichier JSON : " + error.message);
+        }
+    };
+    reader.readAsText(file);
+}
+
+function displaySessionGoal(goalData) {
+    const displayElement = document.getElementById('session-goal-display');
+    if (!displayElement) return;
+
+    // Clear previous goal
+    displayElement.innerHTML = '';
+
+    if (!goalData || !goalData.exercises || goalData.exercises.length === 0) {
+        displayElement.innerHTML = '<p>Le fichier ne contient aucun exercice.</p>';
+        return;
+    }
+
+    let html = `<h4>Objectif : ${goalData.session || 'Séance sans nom'}</h4>`;
+    html += '<ul id="goal-list">';
+
+    goalData.exercises.forEach((exercise, index) => {
+        const exerciseJson = JSON.stringify(exercise).replace(/'/g, "&apos;");
+        html += `<li id="goal-item-${index}" onclick='fillLogForm(${exerciseJson})' style="cursor: pointer; list-style-type: none; margin-left: -20px;">`;
+        html += `<input type="checkbox" onclick="toggleGoalItem(event, this, ${index})" style="margin-right: 10px;">`;
+        html += `<span>`;
+        html += `<strong>${exercise.exercise}</strong>: `;
+        let details = [];
+        if (exercise.set) details.push(`Séries: ${exercise.set}`);
+        if (exercise.reps) details.push(`Reps: ${exercise.reps}`);
+        if (exercise.weight) details.push(`Poids: ${exercise.weight} lb`);
+        if (exercise.duration) details.push(`Temps: ${exercise.duration}`);
+        html += details.join(', ');
+        html += `</span></li>`;
+    });
+
+    html += '</ul>';
+    displayElement.innerHTML = html;
+}
+
+function toggleGoalItem(event, checkbox, index) {
+    event.stopPropagation(); // Prevent the li's onclick from firing
+    const listItem = document.getElementById(`goal-item-${index}`);
+    const span = listItem.querySelector('span'); // Cible le span pour le style
+    if (checkbox.checked) {
+        span.style.textDecoration = 'line-through';
+        span.style.color = '#888';
+    } else {
+        span.style.textDecoration = 'none';
+        span.style.color = 'inherit';
+    }
+}
+
+function fillLogForm(exerciseData) {
+    document.getElementById('exercise').value = exerciseData.exercise || '';
+    document.getElementById('setNum').value = exerciseData.set || '1';
+    document.getElementById('reps').value = exerciseData.reps || '';
+    document.getElementById('weight').value = exerciseData.weight || '';
+    document.getElementById('steps').value = exerciseData.steps || '';
+    document.getElementById('distance').value = exerciseData.distance || '';
+    document.getElementById('kcal').value = exerciseData.kcal || '';
+    document.getElementById('duration').value = exerciseData.duration || '';
+    document.getElementById('avgHr').value = exerciseData.avgHr || '';
+    document.getElementById('maxHr').value = exerciseData.maxHr || '';
+    document.getElementById('notes').value = exerciseData.notes || '';
+
+    // Mettre à jour l'affichage des informations sur l'exercice
+    updateExerciseDisplay(exerciseData.exercise);
+}
