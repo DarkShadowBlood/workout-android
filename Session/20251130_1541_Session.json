@@ -1,0 +1,33 @@
+{
+  "session": "Session",
+  "date": "2025-11-30",
+  "time": "15:41",
+  "exercises": [
+    {
+      "exercise": "Deadlift - Sans poids",
+      "set": "1",
+      "reps": "50",
+      "weight": "35",
+      "steps": "",
+      "distance": "",
+      "kcal": "85",
+      "duration": "10:50:20",
+      "avgHr": "20",
+      "maxHr": "50",
+      "notes": ""
+    },
+    {
+      "exercise": "Deadlift - Avec haltères",
+      "set": "3",
+      "reps": "5",
+      "weight": "10",
+      "steps": "",
+      "distance": "",
+      "kcal": "20",
+      "duration": "50:20:30",
+      "avgHr": "80",
+      "maxHr": "50",
+      "notes": ""
+    }
+  ]
+}
