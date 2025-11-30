@@ -494,3 +494,61 @@ th {
     min-width: 45px;
     text-align: right;
 }
+
+/* Rotation Button and Layout */
+#audio-player-container h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-rotate {
+    background: none;
+    border: 1px solid #555;
+    color: var(--text-color);
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 5px 8px;
+    margin: 0;
+    line-height: 1;
+    border-radius: 6px;
+    width: auto; /* Override default button width */
+}
+
+.btn-rotate:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.player-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.main-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Rotated (Landscape) State */
+#audio-player-container.rotated .player-content {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#audio-player-container.rotated .main-controls {
+    flex: 2;
+    min-width: 0; /* Allow flex shrinking */
+}
+
+#audio-player-container.rotated #playlist-container {
+    flex: 1;
+    min-width: 0; /* Allow flex shrinking */
+    height: 220px; /* Or a suitable height */
+    margin-top: 0;
+}

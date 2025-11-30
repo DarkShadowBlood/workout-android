@@ -96,35 +96,40 @@
 
         <!-- Audio Player Section -->
         <div id="audio-player-container" class="exercise-section">
-            <h3>🎵 Lecteur Ambiance</h3>
-            <div id="track-info">
-                 <span id="track-title"></span>
-            </div>
+            <h3>
+                🎵 Lecteur Ambiance
+                <button id="rotate-player" class="btn-rotate">🔄</button>
+            </h3>
             <audio id="ambient-audio-player" style="display: none;"></audio>
-    
-            <div class="progress-container" id="progress-container">
-                <div class="time-display">
-                    <span id="current-time">00:00</span>
-                    <span id="total-duration">00:00</span>
+            <div class="player-content">
+                <div class="main-controls">
+                    <div id="track-info">
+                        <span id="track-title"></span>
+                    </div>
+                    <div class="progress-container" id="progress-container">
+                        <div class="time-display">
+                            <span id="current-time">00:00</span>
+                            <span id="total-duration">00:00</span>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div id="progress-bar"></div>
+                        </div>
+                    </div>
+                    <div class="audio-controls">
+                        <button id="prev-track" class="btn-audio">⏮️</button>
+                        <button id="play-pause-audio" class="btn-audio">▶️</button>
+                        <button id="next-track" class="btn-audio">⏭️</button>
+                        <button id="shuffle-playlist" class="btn-audio">🔀</button>
+                        <div class="volume-control">
+                            <label for="volume-slider">🔊</label>
+                            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+                            <span id="volume-level">100%</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="progress-bar-wrapper">
-                    <div id="progress-bar"></div>
+                <div id="playlist-container">
+                    <ul id="playlist"></ul>
                 </div>
-            </div>
-    
-            <div class="audio-controls">
-                <button id="prev-track" class="btn-audio">⏮️</button>
-                <button id="play-pause-audio" class="btn-audio">▶️</button>
-                <button id="next-track" class="btn-audio">⏭️</button>
-                <button id="shuffle-playlist" class="btn-audio">🔀</button>
-                <div class="volume-control">
-                    <label for="volume-slider">🔊</label>
-                    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
-                    <span id="volume-level">100%</span>
-                </div>
-            </div>
-            <div id="playlist-container">
-                <ul id="playlist"></ul>
             </div>
         </div>
 

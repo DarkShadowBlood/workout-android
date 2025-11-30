@@ -883,6 +883,15 @@ if (!ambientAudioPlayer || typeof SOUND_MANIFEST === 'undefined' || !SOUND_MANIF
     ambientAudioPlayer.addEventListener('loadedmetadata', setDuration);
     if(progressBarWrapper) progressBarWrapper.addEventListener('click', seek);
 
+    const rotatePlayerBtn = document.getElementById('rotate-player');
+    const playerContainer = document.getElementById('audio-player-container');
+
+    if (rotatePlayerBtn && playerContainer) {
+        rotatePlayerBtn.addEventListener('click', () => {
+            playerContainer.classList.toggle('rotated');
+        });
+    }
+
 
     // Initial Load
 // --- COUNTDOWN TIMER FUNCTIONALITY ---
