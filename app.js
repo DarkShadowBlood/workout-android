@@ -499,7 +499,7 @@ function playAmbient() {
 
     currentAmbientAudio = new Audio(ambientFile);
     currentAmbientAudio.loop = true;
-    currentAmbientAudio.volume = 0.5;
+    currentAmbientAudio.volume = volumeSlider.value;
 
     currentAmbientAudio.play().catch(err => {
         console.log('Impossible de jouer l\'ambiance:', err);
@@ -716,6 +716,9 @@ const progressBar = document.getElementById('progress-bar');
 const progressBarWrapper = document.querySelector('.progress-bar-wrapper');
 const currentTimeSpan = document.getElementById('current-time');
 const totalDurationSpan = document.getElementById('total-duration');
+const volumeSlider = document.getElementById('volume-slider');
+const volumeLevel = document.getElementById('volume-level');
+
 
 
 if (!ambientAudioPlayer || typeof SOUND_MANIFEST === 'undefined' || !SOUND_MANIFEST.ambient) {
@@ -741,6 +744,7 @@ if (!ambientAudioPlayer || typeof SOUND_MANIFEST === 'undefined' || !SOUND_MANIF
             currentTrackIndex = index;
             const trackName = playlist[currentTrackIndex];
             ambientAudioPlayer.src = `sounds/${trackName}`;
+            ambientAudioPlayer.volume = volumeSlider.value;
             if(trackInfoSpan) trackInfoSpan.textContent = trackName.replace('.mp3', '');
             updatePlaylistUI();
         }
@@ -859,6 +863,19 @@ if (!ambientAudioPlayer || typeof SOUND_MANIFEST === 'undefined' || !SOUND_MANIF
     if (nextBtn) nextBtn.addEventListener('click', nextTrack);
     if (shuffleBtn) shuffleBtn.addEventListener('click', shufflePlaylist);
 
+    if (volumeSlider) {
+        volumeSlider.addEventListener('input', () => {
+            const newVolume = volumeSlider.value;
+            ambientAudioPlayer.volume = newVolume;
+            if (currentAmbientAudio) {
+                currentAmbientAudio.volume = newVolume;
+            }
+            if (volumeLevel) {
+                volumeLevel.textContent = `${Math.round(newVolume * 100)}%`;
+            }
+        });
+    }
+
     ambientAudioPlayer.addEventListener('play', updatePlayPauseIcon);
     ambientAudioPlayer.addEventListener('pause', updatePlayPauseIcon);
     ambientAudioPlayer.addEventListener('ended', nextTrack);
@@ -868,5 +885,92 @@ if (!ambientAudioPlayer || typeof SOUND_MANIFEST === 'undefined' || !SOUND_MANIF
 
 
     // Initial Load
-    loadTrack(0);
+// --- COUNTDOWN TIMER FUNCTIONALITY ---
+const countdownInput = document.getElementById('countdown-time-input');
+const startCountdownBtn = document.getElementById('start-countdown');
+const pauseCountdownBtn = document.getElementById('pause-countdown');
+const resetCountdownBtn = document.getElementById('reset-countdown');
+const countdownSoundThemeSelector = document.getElementById('countdown-sound-theme');
+
+let countdownInterval = null;
+let countdownTime = parseInt(countdownInput.value, 10);
+let isCountdownRunning = false;
+let initialCountdownTime = countdownTime;
+
+function playCountdownSound() {
+    const selectedTheme = countdownSoundThemeSelector.value;
+    if (typeof SOUND_MANIFEST === 'undefined' || !SOUND_MANIFEST.files) {
+        console.log('⚠️ SOUND_MANIFEST not loaded');
+        return;
+    }
+
+    const phasePrefix = selectedTheme.charAt(0).toUpperCase() + selectedTheme.slice(1);
+    const eligibleFiles = SOUND_MANIFEST.files.filter(f => f.startsWith(phasePrefix));
+
+    if (eligibleFiles.length === 0) {
+        console.log(`⚠️ No sound file found for theme: ${selectedTheme}`);
+        return;
+    }
+
+    const randomFile = eligibleFiles[Math.floor(Math.random() * eligibleFiles.length)];
+    const fullPath = `sounds/${randomFile}`;
+    
+    try {
+        const audio = new Audio(fullPath);
+        audio.play().catch(err => console.log('Erreur audio:', err));
+    } catch (error) {
+        console.log('Erreur audio:', error);
+    }
+}
+
+function startCountdown() {
+    if (isCountdownRunning) return;
+
+    isCountdownRunning = true;
+    countdownInterval = setInterval(() => {
+        countdownTime--;
+        countdownInput.value = countdownTime;
+
+        if (countdownTime <= 0) {
+            clearInterval(countdownInterval);
+            isCountdownRunning = false;
+            playCountdownSound();
+            // Reset to initial time for next run
+            countdownTime = initialCountdownTime; 
+            countdownInput.value = countdownTime;
+        }
+    }, 1000);
+}
+
+function pauseCountdown() {
+    clearInterval(countdownInterval);
+    isCountdownRunning = false;
+}
+
+function resetCountdown() {
+    clearInterval(countdownInterval);
+    isCountdownRunning = false;
+    // Reset to the time currently in the input field
+    initialCountdownTime = parseInt(countdownInput.value, 10) || 60;
+    countdownTime = initialCountdownTime;
+    countdownInput.value = countdownTime;
+}
+
+// Update initial time when user changes it
+countdownInput.addEventListener('change', () => {
+    let newTime = parseInt(countdownInput.value, 10);
+    if (isNaN(newTime) || newTime < 1) {
+        newTime = 60; // Default to 60 if input is invalid
+    }
+    countdownInput.value = newTime;
+    initialCountdownTime = newTime;
+    if (!isCountdownRunning) {
+        countdownTime = initialCountdownTime;
+    }
+});
+
+
+startCountdownBtn.addEventListener('click', startCountdown);
+pauseCountdownBtn.addEventListener('click', pauseCountdown);
+resetCountdownBtn.addEventListener('click', resetCountdown);
 }

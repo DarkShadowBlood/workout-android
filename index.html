@@ -72,6 +72,28 @@
             <div id="current-phase" class="current-phase"></div>
         </div>
 
+        <!-- Compte à rebours Section -->
+        <div id="countdown-section" class="exercise-section">
+            <h3>⏳ Compte à rebours</h3>
+            <div class="countdown-timer-display">
+                <input type="number" id="countdown-time-input" value="60" min="1" inputmode="numeric">
+            </div>
+            <div class="countdown-controls">
+                <div class="theme-selector">
+                    <label for="countdown-sound-theme">🎵 Thème:</label>
+                    <select id="countdown-sound-theme">
+                        <option value="Prep">Prep</option>
+                        <option value="Effort">Effort</option>
+                        <option value="Rest">Rest</option>
+                        <option value="End">End</option>
+                    </select>
+                </div>
+                <button id="start-countdown" class="btn-timer">▶️ Start</button>
+                <button id="pause-countdown" class="btn-timer">⏸️ Pause</button>
+                <button id="reset-countdown" class="btn-timer">🔄 Reset</button>
+            </div>
+        </div>
+
         <!-- Audio Player Section -->
         <div id="audio-player-container" class="exercise-section">
             <h3>🎵 Lecteur Ambiance</h3>
@@ -95,6 +117,11 @@
                 <button id="play-pause-audio" class="btn-audio">▶️</button>
                 <button id="next-track" class="btn-audio">⏭️</button>
                 <button id="shuffle-playlist" class="btn-audio">🔀</button>
+                <div class="volume-control">
+                    <label for="volume-slider">🔊</label>
+                    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+                    <span id="volume-level">100%</span>
+                </div>
             </div>
             <div id="playlist-container">
                 <ul id="playlist"></ul>
