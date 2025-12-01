@@ -1122,3 +1122,19 @@ function fillLogForm(exerciseData) {
     // Mettre à jour l'affichage des informations sur l'exercice
     updateExerciseDisplay(exerciseData.exercise);
 }
+
+// --- COLLAPSIBLE SECTIONS ---
+const headers = document.querySelectorAll('.collapsible-header');
+headers.forEach(header => {
+    header.style.cursor = 'pointer';
+    header.addEventListener('click', function () {
+        const content = this.nextElementSibling;
+        if (content && content.classList.contains('collapsible-content')) {
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        }
+    });
+});

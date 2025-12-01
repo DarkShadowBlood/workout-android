@@ -52,165 +52,178 @@
 
         <hr style="border: 0; border-top: 1px solid #333; margin: 20px 0;">
 
-        <label>Exercice</label>
-        <div class="autocomplete-container">
-            <input type="text" id="exercise" placeholder="ex: Bench Press" autocomplete="off">
-            <div id="autocomplete-list" class="autocomplete-items" style="display: none;"></div>
+        <div class="layout-wrapper">
+            <div class="main-column">
+                <label>Exercice</label>
+                <div class="autocomplete-container">
+                    <input type="text" id="exercise" placeholder="ex: Bench Press" autocomplete="off">
+                    <div id="autocomplete-list" class="autocomplete-items" style="display: none;"></div>
+                </div>
+
+                <!-- 3. Log Section -->
+                <div id="exercise-log" class="exercise-section">
+                    <h3>📝 Log</h3>
+
+                    <div class="row">
+                        <div class="col">
+                            <label>Série</label>
+                            <input type="number" id="setNum" placeholder="1" value="1" min="0" inputmode="numeric">
+                        </div>
+                        <div class="col">
+                            <label>Reps</label>
+                            <input type="number" id="reps" placeholder="0" min="0" inputmode="numeric">
+                        </div>
+                        <div class="col">
+                            <label>Poids (lb)</label>
+                            <input type="number" id="weight" placeholder="0" min="0" inputmode="numeric">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label>Pas</label>
+                            <input type="number" id="steps" placeholder="0" min="0" inputmode="numeric">
+                        </div>
+                        <div class="col">
+                            <label>Distance (km)</label>
+                            <input type="text" id="distance" placeholder="0.0" oninput="formatDistance(this)"
+                                inputmode="decimal">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label>Kcal</label>
+                            <input type="number" id="kcal" placeholder="0" min="0" inputmode="numeric">
+                        </div>
+                        <div class="col">
+                            <label>Temps (hh:mm:ss)</label>
+                            <input type="text" id="duration" placeholder="00:00:00" oninput="formatDuration(this)"
+                                inputmode="numeric">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label>FC Moyenne (bpm)</label>
+                            <input type="number" id="avgHr" placeholder="0" min="0" inputmode="numeric">
+                        </div>
+                        <div class="col">
+                            <label>FC Maximum (bpm)</label>
+                            <input type="number" id="maxHr" placeholder="0" min="0" inputmode="numeric">
+                        </div>
+                    </div>
+
+                    <label>Notes</label>
+                    <input type="text" id="notes" placeholder="ex: Bonne forme, difficile...">
+
+                    <button class="btn-add" onclick="addSet()">➕ Ajouter la série</button>
+                </div>
+                <!-- End of Log Section -->
+                
+                <!-- 1. Information Section -->
+                <div id="exercise-information" class="exercise-section" style="display: none;">
+                    <h3 class="collapsible-header">📋 Information</h3>
+                    <div class="collapsible-content" style="display: none;">
+                        <div id="info-content"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="side-column">
+                <!-- 2. Chronomètre Section -->
+                <div id="exercise-timer" class="exercise-section" style="display: none;">
+                    <h3 class="collapsible-header">⏱️ Chronomètre</h3>
+                    <div class="collapsible-content" style="display: none;">
+                        <div id="timer-display">
+                            <div class="timer-phase" id="prep-timer">Prep: <span>0</span>s</div>
+                            <div class="timer-phase" id="effort-timer">Effort: <span>0</span>s</div>
+                            <div class="timer-phase" id="rest-timer">Rest: <span>0</span>s</div>
+                            <div class="timer-phase" id="end-timer">End: <span>0</span>s</div>
+                        </div>
+                        <div class="timer-controls">
+                            <div class="theme-selector">
+                                <label for="sound-theme">🎵 Thème:</label>
+                                <select id="sound-theme">
+                                    <option value="random">🎲 Aléatoire</option>
+                                </select>
+                            </div>
+                            <div class="theme-selector">
+                                <label for="ambient-music">🎧 Ambiance:</label>
+                                <select id="ambient-music">
+                                    <option value="none">🔇 Aucun</option>
+                                    <option value="random">🎲 Aléatoire</option>
+                                    <!-- Options will be populated dynamically from sound_manifest.js -->
+                                </select>
+                            </div>
+                            <button id="start-timer" class="btn-timer">▶️ Start</button>
+                            <button id="pause-timer" class="btn-timer">⏸️ Pause</button>
+                            <button id="reset-timer" class="btn-timer">🔄 Reset</button>
+                        </div>
+                        <div id="current-phase" class="current-phase"></div>
+                    </div>
+                </div>
+
+                <!-- Compte à rebours Section -->
+                <div id="countdown-section" class="exercise-section">
+                    <h3 class="collapsible-header">⏳ Compte à rebours</h3>
+                    <div class="collapsible-content" style="display: none;">
+                        <div class="countdown-timer-display">
+                            <input type="number" id="countdown-time-input" value="60" min="1" inputmode="numeric">
+                        </div>
+                        <div class="countdown-controls">
+                            <div class="theme-selector">
+                                <label for="countdown-sound-theme">🎵 Thème:</label>
+                                <select id="countdown-sound-theme">
+                                    <option value="Prep">Prep</option>
+                                    <option value="Effort">Effort</option>
+                                    <option value="Rest">Rest</option>
+                                    <option value="End">End</option>
+                                </select>
+                            </div>
+                            <button id="start-countdown" class="btn-timer">▶️ Start</button>
+                            <button id="pause-countdown" class="btn-timer">⏸️ Pause</button>
+                            <button id="reset-countdown" class="btn-timer">🔄 Reset</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Audio Player Section -->
+                <div id="audio-player-container" class="exercise-section">
+                    <h3 class="collapsible-header">🎵 Lecteur Ambiance</h3>
+                    <div class="collapsible-content" style="display: none;">
+                        <div id="track-info">
+                             <span id="track-title"></span>
+                        </div>
+                        <audio id="ambient-audio-player" style="display: none;"></audio>
+                
+                        <div class="progress-container" id="progress-container">
+                            <div class="time-display">
+                                <span id="current-time">00:00</span>
+                                <span id="total-duration">00:00</span>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div id="progress-bar"></div>
+                            </div>
+                        </div>
+                
+                        <div class="audio-controls">
+                            <button id="prev-track" class="btn-audio">⏮️</button>
+                            <button id="play-pause-audio" class="btn-audio">▶️</button>
+                            <button id="next-track" class="btn-audio">⏭️</button>
+                            <button id="shuffle-playlist" class="btn-audio">🔀</button>
+                            <div class="volume-control">
+                                <label for="volume-slider">🔊</label>
+                                <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
+                                <span id="volume-level">100%</span>
+                            </div>
+                        </div>
+                        <div id="playlist-container">
+                            <ul id="playlist"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- 1. Information Section -->
-        <div id="exercise-information" class="exercise-section" style="display: none;">
-            <h3>📋 Information</h3>
-            <div id="info-content"></div>
-        </div>
-
-        <!-- 2. Chronomètre Section -->
-        <div id="exercise-timer" class="exercise-section" style="display: none;">
-            <h3>⏱️ Chronomètre</h3>
-            <div id="timer-display">
-                <div class="timer-phase" id="prep-timer">Prep: <span>0</span>s</div>
-                <div class="timer-phase" id="effort-timer">Effort: <span>0</span>s</div>
-                <div class="timer-phase" id="rest-timer">Rest: <span>0</span>s</div>
-                <div class="timer-phase" id="end-timer">End: <span>0</span>s</div>
-            </div>
-            <div class="timer-controls">
-                <div class="theme-selector">
-                    <label for="sound-theme">🎵 Thème:</label>
-                    <select id="sound-theme">
-                        <option value="random">🎲 Aléatoire</option>
-                    </select>
-                </div>
-                <div class="theme-selector">
-                    <label for="ambient-music">🎧 Ambiance:</label>
-                    <select id="ambient-music">
-                        <option value="none">🔇 Aucun</option>
-                        <option value="random">🎲 Aléatoire</option>
-                        <!-- Options will be populated dynamically from sound_manifest.js -->
-                    </select>
-                </div>
-                <button id="start-timer" class="btn-timer">▶️ Start</button>
-                <button id="pause-timer" class="btn-timer">⏸️ Pause</button>
-                <button id="reset-timer" class="btn-timer">🔄 Reset</button>
-            </div>
-            <div id="current-phase" class="current-phase"></div>
-        </div>
-
-        <!-- Compte à rebours Section -->
-        <div id="countdown-section" class="exercise-section">
-            <h3>⏳ Compte à rebours</h3>
-            <div class="countdown-timer-display">
-                <input type="number" id="countdown-time-input" value="60" min="1" inputmode="numeric">
-            </div>
-            <div class="countdown-controls">
-                <div class="theme-selector">
-                    <label for="countdown-sound-theme">🎵 Thème:</label>
-                    <select id="countdown-sound-theme">
-                        <option value="Prep">Prep</option>
-                        <option value="Effort">Effort</option>
-                        <option value="Rest">Rest</option>
-                        <option value="End">End</option>
-                    </select>
-                </div>
-                <button id="start-countdown" class="btn-timer">▶️ Start</button>
-                <button id="pause-countdown" class="btn-timer">⏸️ Pause</button>
-                <button id="reset-countdown" class="btn-timer">🔄 Reset</button>
-            </div>
-        </div>
-
-        <!-- Audio Player Section -->
-        <div id="audio-player-container" class="exercise-section">
-            <h3>🎵 Lecteur Ambiance</h3>
-            <div id="track-info">
-                 <span id="track-title"></span>
-            </div>
-            <audio id="ambient-audio-player" style="display: none;"></audio>
-    
-            <div class="progress-container" id="progress-container">
-                <div class="time-display">
-                    <span id="current-time">00:00</span>
-                    <span id="total-duration">00:00</span>
-                </div>
-                <div class="progress-bar-wrapper">
-                    <div id="progress-bar"></div>
-                </div>
-            </div>
-    
-            <div class="audio-controls">
-                <button id="prev-track" class="btn-audio">⏮️</button>
-                <button id="play-pause-audio" class="btn-audio">▶️</button>
-                <button id="next-track" class="btn-audio">⏭️</button>
-                <button id="shuffle-playlist" class="btn-audio">🔀</button>
-                <div class="volume-control">
-                    <label for="volume-slider">🔊</label>
-                    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
-                    <span id="volume-level">100%</span>
-                </div>
-            </div>
-            <div id="playlist-container">
-                <ul id="playlist"></ul>
-            </div>
-        </div>
-
-        <!-- 3. Log Section -->
-        <div id="exercise-log" class="exercise-section">
-            <h3>📝 Log</h3>
-
-            <div class="row">
-                <div class="col">
-                    <label>Série</label>
-                    <input type="number" id="setNum" placeholder="1" value="1" min="0" inputmode="numeric">
-                </div>
-                <div class="col">
-                    <label>Reps</label>
-                    <input type="number" id="reps" placeholder="0" min="0" inputmode="numeric">
-                </div>
-                <div class="col">
-                    <label>Poids (lb)</label>
-                    <input type="number" id="weight" placeholder="0" min="0" inputmode="numeric">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <label>Pas</label>
-                    <input type="number" id="steps" placeholder="0" min="0" inputmode="numeric">
-                </div>
-                <div class="col">
-                    <label>Distance (km)</label>
-                    <input type="text" id="distance" placeholder="0.0" oninput="formatDistance(this)"
-                        inputmode="decimal">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <label>Kcal</label>
-                    <input type="number" id="kcal" placeholder="0" min="0" inputmode="numeric">
-                </div>
-                <div class="col">
-                    <label>Temps (hh:mm:ss)</label>
-                    <input type="text" id="duration" placeholder="00:00:00" oninput="formatDuration(this)"
-                        inputmode="numeric">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <label>FC Moyenne (bpm)</label>
-                    <input type="number" id="avgHr" placeholder="0" min="0" inputmode="numeric">
-                </div>
-                <div class="col">
-                    <label>FC Maximum (bpm)</label>
-                    <input type="number" id="maxHr" placeholder="0" min="0" inputmode="numeric">
-                </div>
-            </div>
-
-            <label>Notes</label>
-            <input type="text" id="notes" placeholder="ex: Bonne forme, difficile...">
-
-            <button class="btn-add" onclick="addSet()">➕ Ajouter la série</button>
-        </div>
-        <!-- End of Log Section -->
 
         <table>
             <thead>

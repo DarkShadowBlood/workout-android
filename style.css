@@ -504,3 +504,41 @@ th {
     justify-content: center; /* Centre les éléments */
     margin-top: 15px; /* Ajoute de l'espace au-dessus */
 }
+
+/* Desktop Layout */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .layout-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .main-column {
+        flex: 2;
+        /* La colonne principale prendra plus de place */
+    }
+
+    .side-column {
+        flex: 1;
+        position: sticky;
+        /* Rend la colonne latérale collante */
+        top: 20px;
+        /* Garde un espace par rapport au haut */
+    }
+
+    /* Assurez-vous que les sections à l'intérieur des colonnes prennent toute la largeur de la colonne */
+    .main-column .exercise-section,
+    .side-column .exercise-section {
+        margin-top: 0;
+        /* Réinitialise la marge pour un meilleur alignement */
+    }
+
+    .main-column>label {
+        margin-top: 0;
+    }
+}
