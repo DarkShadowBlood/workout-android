@@ -681,10 +681,27 @@ document.getElementById('start-timer').addEventListener('click', startTimer);
 document.getElementById('pause-timer').addEventListener('click', pauseTimer);
 document.getElementById('reset-timer').addEventListener('click', resetTimer);
 
+// Display exercise demonstration
+function displayExerciseDemonstration(exerciseData) {
+    const demonstrationSection = document.getElementById('exercise-demonstration');
+    const exerciseImage = document.getElementById('exercise-image');
+
+    if (exerciseData && exerciseData.Image) {
+        exerciseImage.src = exerciseData.Image;
+        exerciseImage.alt = `Démonstration pour ${exerciseData.Exercice}`;
+        demonstrationSection.style.display = 'block';
+    } else {
+        demonstrationSection.style.display = 'none';
+        exerciseImage.src = '';
+        exerciseImage.alt = 'Démonstration de l\'exercice';
+    }
+}
+
 // Update information and timer when exercise is selected
 function updateExerciseDisplay(exerciseName) {
     const exerciseData = findExerciseDetails(exerciseName);
     displayExerciseInfo(exerciseData);
+    displayExerciseDemonstration(exerciseData);
     initializeTimer(exerciseData);
 }
 
