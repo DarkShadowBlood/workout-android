@@ -153,11 +153,25 @@ class SoundManagerApp:
         if not os.path.exists(SOUNDS_DIR):
             os.makedirs(SOUNDS_DIR)
         
-        files = [f for f in os.listdir(SOUNDS_DIR) if f.lower().endswith('.mp3')]
-        self.manifest_data['files'] = files
+        all_files = []
+        # Folders to scan
+        subdirs = ["Prep", "Effort", "Rest", "End", "ambiance"]
+        
+        for subdir in subdirs:
+            path = os.path.join(SOUNDS_DIR, subdir)
+            if os.path.exists(path):
+                # Add files with their folder prefix
+                files = [f"{subdir}/{f}" for f in os.listdir(path) 
+                        if f.lower().endswith('.mp3')]
+                all_files.extend(files)
+            
+        self.manifest_data['files'] = sorted(list(set(all_files)))
         
         # Update UI
         self.refresh_ui()
+
+
+
 
     def refresh_ui(self):
         # Themes

@@ -6,15 +6,19 @@ const SOUND_MANIFEST = {
         "04": "Hardcore"
     },
     "ambient": [
-        "La Puissance.mp3",
-        "Même à terre j’avance.mp3",
-        "power.mp3"
+        "ambiance/Je me relève.mp3",
+        "ambiance/La Puissance.mp3",
+        "ambiance/Même à terre j’avance.mp3",
+        "ambiance/Training of the Hero   Heroic Fantasy Bard Song of Goblins, Painful Workouts and One Mighty Punch.mp3",
+        "ambiance/power.mp3"
     ],
     "files": [
-        "Effort_01_Sword.mp3",
-        "La Puissance.mp3",
-        "Même à terre j’avance.mp3",
-        "power.mp3",
-        "Prep_01_Sword.mp3"
+        "Effort/01_Sword.mp3",
+        "Prep/01_Sword.mp3",
+        "ambiance/Je me relève.mp3",
+        "ambiance/La Puissance.mp3",
+        "ambiance/Même à terre j’avance.mp3",
+        "ambiance/Training of the Hero   Heroic Fantasy Bard Song of Goblins, Painful Workouts and One Mighty Punch.mp3",
+        "ambiance/power.mp3"
     ]
 };
