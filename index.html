@@ -54,7 +54,12 @@
 
         <div class="layout-wrapper">
             <div class="main-column">
-                <label>Exercice</label>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                    <label style="margin-bottom: 0;">Exercice</label>
+                    <select id="dataSourceSelector" style="padding: 2px; font-size: 0.85em;">
+                        <!-- JS populated -->
+                    </select>
+                </div>
                 <div class="autocomplete-container">
                     <input type="text" id="exercise" placeholder="ex: Bench Press" autocomplete="off">
                     <div id="autocomplete-list" class="autocomplete-items" style="display: none;"></div>
@@ -125,7 +130,8 @@
                 <div id="exercise-demonstration" class="exercise-section" style="display: none;">
                     <h3 class="collapsible-header">💪 Démonstration</h3>
                     <div class="collapsible-content" style="display: none;">
-                        <img id="exercise-image" src="" alt="Démonstration de l'exercice" style="width: 100%; max-width: 400px; display: block; margin: auto;">
+                        <img id="exercise-image" src="" alt="Démonstration de l'exercice"
+                            style="width: 100%; max-width: 400px; display: block; margin: auto;">
                     </div>
                 </div>
 
@@ -200,10 +206,10 @@
                     <h3 class="collapsible-header">🎵 Lecteur Ambiance</h3>
                     <div class="collapsible-content" style="display: none;">
                         <div id="track-info">
-                             <span id="track-title"></span>
+                            <span id="track-title"></span>
                         </div>
                         <audio id="ambient-audio-player" style="display: none;"></audio>
-                
+
                         <div class="progress-container" id="progress-container">
                             <div class="time-display">
                                 <span id="current-time">00:00</span>
@@ -213,7 +219,7 @@
                                 <div id="progress-bar"></div>
                             </div>
                         </div>
-                
+
                         <div class="audio-controls">
                             <button id="prev-track" class="btn-audio">⏮️</button>
                             <button id="play-pause-audio" class="btn-audio">▶️</button>
@@ -259,13 +265,56 @@
     </div>
 
     <!-- Data Injection Point - Scripts loaded at end of body for proper DOM loading -->
-    <script src="data_exercices.js"></script>
+    <!-- Dynamic Data Source Loading -->
+    <script>
+        const AVAILABLE_DATA_SOURCES = [
+            { name: "Entraînement", file: "data_exercices.js" },
+            { name: "Entraînement Simple", file: "data_exercices_simple.js" }
+        ];
+
+        const STORAGE_KEY_SOURCE = 'workoutDataSource';
+        let selectedSourceFile = localStorage.getItem(STORAGE_KEY_SOURCE) || "data_exercices.js";
+
+        // Ensure selected file is valid
+        if (!AVAILABLE_DATA_SOURCES.some(src => src.file === selectedSourceFile)) {
+            selectedSourceFile = "data_exercices.js";
+        }
+
+        document.write('<script src="' + selectedSourceFile + '"><\/script>');
+    </script>
     <script src="data_exercices_complet.js"></script>
     <script src="sound_manifest.js"></script>
     <script>
         // Map external data to internal variable for compatibility
         const EXERCISE_DATA = exercicesCategories;
         const EXERCISE_DETAILS = db_exercices;
+
+        // Logic for Data Source Selector
+        (function () {
+            const selector = document.getElementById('dataSourceSelector');
+            if (!selector) return;
+
+            const sources = [
+                { name: "Entraînement Standard", file: "data_exercices.js" },
+                { name: "Entraînement Simple", file: "data_exercices_simple.js" }
+            ];
+            const STORAGE_KEY = 'workoutDataSource';
+            const current = localStorage.getItem(STORAGE_KEY) || "data_exercices.js";
+
+            sources.forEach(src => {
+                const opt = document.createElement('option');
+                opt.value = src.file;
+                opt.textContent = src.name;
+                if (src.file === current) opt.selected = true;
+                selector.appendChild(opt);
+            });
+
+            selector.addEventListener('change', function () {
+                localStorage.setItem(STORAGE_KEY, this.value);
+                // Reload to apply the new script
+                location.reload();
+            });
+        })();
     </script>
     <script src="app.js"></script>
 </body>

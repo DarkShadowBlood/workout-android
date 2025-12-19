@@ -7,11 +7,13 @@ const SOUND_MANIFEST = {
     },
     "ambient": [
         "La Puissance.mp3",
+        "Même à terre j’avance.mp3",
         "power.mp3"
     ],
     "files": [
         "Effort_01_Sword.mp3",
         "La Puissance.mp3",
+        "Même à terre j’avance.mp3",
         "power.mp3",
         "Prep_01_Sword.mp3"
     ]
