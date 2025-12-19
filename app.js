@@ -916,24 +916,32 @@ if (!ambientAudioPlayer || typeof SOUND_MANIFEST === 'undefined' || !SOUND_MANIF
     populateSessionSelector();
     // --- COUNTDOWN TIMER FUNCTIONALITY ---
     const countdownInput = document.getElementById('countdown-time-input');
+    const countdownRestInput = document.getElementById('countdown-rest-input');
+    const countdownSetsInput = document.getElementById('countdown-sets-input');
+    const countdownStatus = document.getElementById('countdown-status');
     const startCountdownBtn = document.getElementById('start-countdown');
     const pauseCountdownBtn = document.getElementById('pause-countdown');
     const resetCountdownBtn = document.getElementById('reset-countdown');
     const countdownSoundThemeSelector = document.getElementById('countdown-sound-theme');
 
     let countdownInterval = null;
-    let countdownTime = parseInt(countdownInput.value, 10);
+    let countdownTime = 0;
     let isCountdownRunning = false;
-    let initialCountdownTime = countdownTime;
+    let currentSet = 1;
+    let isRestPhase = false;
 
-    function playCountdownSound() {
-        const selectedTheme = countdownSoundThemeSelector.value;
+    // Pour mémoriser les valeurs initiales au moment du START
+    let memoWork = 60;
+    let memoRest = 10;
+    let memoSets = 3;
+
+    function playCountdownSound(phase = null) {
+        const selectedTheme = phase || countdownSoundThemeSelector.value;
         if (typeof SOUND_MANIFEST === 'undefined' || !SOUND_MANIFEST.files) {
             console.log('⚠️ SOUND_MANIFEST not loaded');
             return;
         }
 
-        // Ensure folder name is correctly formatted (e.g., Prep, Effort)
         const folderName = selectedTheme.charAt(0).toUpperCase() + selectedTheme.slice(1);
         const eligibleFiles = SOUND_MANIFEST.files.filter(f => f.startsWith(`${folderName}/`));
 
@@ -941,7 +949,6 @@ if (!ambientAudioPlayer || typeof SOUND_MANIFEST === 'undefined' || !SOUND_MANIF
             console.log(`⚠️ Aucun son trouvé dans le dossier: ${folderName}`);
             return;
         }
-
 
         const randomFile = eligibleFiles[Math.floor(Math.random() * eligibleFiles.length)];
         const fullPath = getSoundPath(randomFile);
@@ -954,21 +961,68 @@ if (!ambientAudioPlayer || typeof SOUND_MANIFEST === 'undefined' || !SOUND_MANIF
         }
     }
 
+    function updateCountdownUI() {
+        if (isRestPhase) {
+            countdownStatus.textContent = `⬇️ Repos - Série ${currentSet}/${memoSets}`;
+            countdownStatus.style.color = '#3498db';
+        } else {
+            countdownStatus.textContent = `🔥 Travail - Série ${currentSet}/${memoSets}`;
+            countdownStatus.style.color = '#e74c3c';
+        }
+    }
+
     function startCountdown() {
         if (isCountdownRunning) return;
 
+        // Si on commence de zéro (pas une reprise après pause)
+        if (countdownTime <= 0) {
+            memoWork = parseInt(countdownInput.value, 10) || 60;
+            memoRest = parseInt(countdownRestInput.value, 10) || 10;
+            memoSets = parseInt(countdownSetsInput.value, 10) || 1;
+
+            isRestPhase = false;
+            currentSet = 1;
+            countdownTime = memoWork;
+            playCountdownSound('Effort');
+        }
+
         isCountdownRunning = true;
+        updateCountdownUI();
+
         countdownInterval = setInterval(() => {
             countdownTime--;
-            countdownInput.value = countdownTime;
+
+            if (isRestPhase) {
+                countdownRestInput.value = countdownTime;
+            } else {
+                countdownInput.value = countdownTime;
+            }
 
             if (countdownTime <= 0) {
                 clearInterval(countdownInterval);
                 isCountdownRunning = false;
-                playCountdownSound();
-                // Reset to initial time for next run
-                countdownTime = initialCountdownTime;
-                countdownInput.value = countdownTime;
+
+                if (!isRestPhase) {
+                    // Fin de la phase de travail
+                    if (currentSet < memoSets) {
+                        isRestPhase = true;
+                        countdownTime = memoRest;
+                        playCountdownSound('Rest');
+                        startCountdown(); // Auto-start rest phase
+                    } else {
+                        // Fin de la dernière série
+                        playCountdownSound('End');
+                        countdownStatus.textContent = '✅ Terminé !';
+                        countdownStatus.style.color = '#2ecc71';
+                    }
+                } else {
+                    // Fin de la phase de repos
+                    isRestPhase = false;
+                    currentSet++;
+                    countdownTime = memoWork;
+                    playCountdownSound('Effort');
+                    startCountdown(); // Auto-start work phase
+                }
             }
         }, 1000);
     }
@@ -976,30 +1030,26 @@ if (!ambientAudioPlayer || typeof SOUND_MANIFEST === 'undefined' || !SOUND_MANIF
     function pauseCountdown() {
         clearInterval(countdownInterval);
         isCountdownRunning = false;
+        if (countdownStatus.textContent && !countdownStatus.textContent.includes('(Pause)')) {
+            countdownStatus.textContent += ' (Pause)';
+        }
     }
 
     function resetCountdown() {
         clearInterval(countdownInterval);
         isCountdownRunning = false;
-        // Reset to the time currently in the input field
-        initialCountdownTime = parseInt(countdownInput.value, 10) || 60;
-        countdownTime = initialCountdownTime;
-        countdownInput.value = countdownTime;
+        currentSet = 1;
+        isRestPhase = false;
+        countdownTime = 0;
+
+        // Restaurer les valeurs mémorées ou par défaut
+        countdownInput.value = memoWork;
+        countdownRestInput.value = memoRest;
+        countdownSetsInput.value = memoSets;
+
+        countdownStatus.textContent = '';
+        countdownStatus.style.color = 'inherit';
     }
-
-    // Update initial time when user changes it
-    countdownInput.addEventListener('change', () => {
-        let newTime = parseInt(countdownInput.value, 10);
-        if (isNaN(newTime) || newTime < 1) {
-            newTime = 60; // Default to 60 if input is invalid
-        }
-        countdownInput.value = newTime;
-        initialCountdownTime = newTime;
-        if (!isCountdownRunning) {
-            countdownTime = initialCountdownTime;
-        }
-    });
-
 
     startCountdownBtn.addEventListener('click', startCountdown);
     pauseCountdownBtn.addEventListener('click', pauseCountdown);

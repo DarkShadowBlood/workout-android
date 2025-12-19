@@ -181,14 +181,35 @@
                 <div id="countdown-section" class="exercise-section">
                     <h3 class="collapsible-header">⏳ Compte à rebours</h3>
                     <div class="collapsible-content" style="display: none;">
-                        <div class="countdown-timer-display">
-                            <input type="number" id="countdown-time-input" value="60" min="1" inputmode="numeric">
+                        <div class="countdown-settings"
+                            style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; padding: 5px 0;">
+                                <label style="margin: 0; font-size: 0.9em; color: #ddd;">🔥 Travail (sec)</label>
+                                <input type="number" id="countdown-time-input" value="60" min="1" inputmode="numeric"
+                                    style="width: 80px; margin: 0; text-align: center;">
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; padding: 5px 0;">
+                                <label style="margin: 0; font-size: 0.9em; color: #ddd;">⬇️ Repos (sec)</label>
+                                <input type="number" id="countdown-rest-input" value="10" min="0" inputmode="numeric"
+                                    style="width: 80px; margin: 0; text-align: center;">
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; padding: 5px 0;">
+                                <label style="margin: 0; font-size: 0.9em; color: #ddd;">🔢 Séries</label>
+                                <input type="number" id="countdown-sets-input" value="3" min="1" inputmode="numeric"
+                                    style="width: 80px; margin: 0; text-align: center;">
+                            </div>
                         </div>
+
+                        <div id="countdown-status"
+                            style="text-align: center; margin: 10px 0; font-weight: bold; min-height: 1.2em;"></div>
+
                         <div class="countdown-controls">
                             <div class="theme-selector">
                                 <label for="countdown-sound-theme">🎵 Dossier:</label>
                                 <select id="countdown-sound-theme">
-
                                     <option value="Prep">Prep</option>
                                     <option value="Effort">Effort</option>
                                     <option value="Rest">Rest</option>
