@@ -1,28 +1,6 @@
 // Fichier généré automatiquement contenant les catégories d'exercices.
 
 const exercicesCategories = {
-    "Favoris": [
-        "Vélo urbain",
-        "Vélo de randonnée",
-        "Marche",
-        "Randonnée"
-    ],
-    "Autres": [
-        "Sommeil"
-    ],
-    "Fitness & Musculation": [
-        "Saut à la corde - Boxe",
-        "Saut à la corde - Lesté",
-        "Musculation"
-    ],
-    "Sports Extérieurs": [
-        "Course à pied",
-        "Marche",
-        "Randonnée",
-        "Vélo urbain",
-        "Vélo de randonnée",
-        "Pelleter la neige"
-    ],
     "Endurance Musculaire": [
         "Bench Press - Sans poids",
         "Crunches - Avec Poids de cheville",
@@ -51,6 +29,7 @@ const exercicesCategories = {
         "Marche du fermier - Avec haltères",
         "Marche du fermier - Classique",
         "Marche du fermier - Unilatéral",
+        "Pelleter la neige",
         "Plank - Avec Pieds sur Banc",
         "Plank - Avec Poids Cheville",
         "Plank - Classique",
@@ -217,6 +196,15 @@ const exercicesCategories = {
     ],
     "Conditionnement Cardiovasculaire": [
         "Entraînement par intervalles",
-        "Vélo elliptique"
+        "Marche",
+        "Randonnée",
+        "Raquettes à neige",
+        "Saut à la corde - Boxe",
+        "Saut à la corde - Lesté",
+        "Saut à la corde - Lesté d'intérieur",
+        "Stepper",
+        "Vélo de randonnée",
+        "Vélo elliptique",
+        "Vélo urbain"
     ]
 };
